@@ -41,7 +41,7 @@ namespace IspanHomework
             listData.Items[i].SubItems.Add(st.EnglishScore.ToString());
             listData.Items[i].SubItems.Add(st.MathScore.ToString());
             listData.Items[i].SubItems.Add(st.chineseScore.ToString());
-
+            //test
         }
     }
 }
