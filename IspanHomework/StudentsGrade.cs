@@ -19,10 +19,10 @@ namespace IspanHomework
             InitializeComponent();
         }
         List<Student> lsstudents = new List<Student>();
+        Student st;
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
-            Student st;
-            st.StudentName = txtName.Text;
+            st.StudentName = txtStudentName.Text;
             st.chineseScore = int.Parse(txtChineseScore.Text);
             st.EnglishScore = int.Parse(txtEnglishScore.Text);
             st.MathScore = int.Parse(txtMathScore.Text);
@@ -32,7 +32,12 @@ namespace IspanHomework
             TOTAL = st.chineseScore + st.EnglishScore + st.MathScore;
             //平均
             float AVG;
-            AVG = TOTAL / 3;
+            AVG = (float)TOTAL / 3;
+            //最高最低分
+            string MaxSuject, MinSuject;
+            int MaxScore, MinScore;
+            //if
+            
 
             int i = 0;
             i = listData.Items.Count + i;
@@ -40,8 +45,16 @@ namespace IspanHomework
             listData.Items[i].SubItems.Add(st.chineseScore.ToString());
             listData.Items[i].SubItems.Add(st.EnglishScore.ToString());
             listData.Items[i].SubItems.Add(st.MathScore.ToString());
-            listData.Items[i].SubItems.Add(st.chineseScore.ToString());
-            //test
+            listData.Items[i].SubItems.Add(TOTAL.ToString());
+            listData.Items[i].SubItems.Add(Math.Round(AVG, 1).ToString());
+
+
+        }
+
+        private void btnRandomStore_Click(object sender, EventArgs e)
+        {
+            Random Score_Random = new Random();
+            st.chineseScore = Score_Random.Next(0,100);
         }
     }
 }

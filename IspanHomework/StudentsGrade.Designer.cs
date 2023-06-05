@@ -34,8 +34,8 @@
             this.labEnglish = new System.Windows.Forms.Label();
             this.txtChineseScore = new System.Windows.Forms.TextBox();
             this.labChinese = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.labName = new System.Windows.Forms.Label();
+            this.txtStudentName = new System.Windows.Forms.TextBox();
+            this.labStudentName = new System.Windows.Forms.Label();
             this.btnAddStudent = new System.Windows.Forms.Button();
             this.btnRandomStore = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,10 +43,10 @@
             this.btnRandom20 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.listData = new System.Windows.Forms.ListView();
-            this.Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Chinese = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.English = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Math = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.StudentName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Chinesescore = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Englishscore = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Mathscore = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.TOTAL = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AVG = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Min = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -107,23 +107,23 @@
             this.labChinese.TabIndex = 10;
             this.labChinese.Text = "國文:";
             // 
-            // txtName
+            // txtStudentName
             // 
-            this.txtName.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtName.Location = new System.Drawing.Point(74, 19);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 27);
-            this.txtName.TabIndex = 9;
+            this.txtStudentName.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtStudentName.Location = new System.Drawing.Point(74, 19);
+            this.txtStudentName.Name = "txtStudentName";
+            this.txtStudentName.Size = new System.Drawing.Size(100, 27);
+            this.txtStudentName.TabIndex = 9;
             // 
-            // labName
+            // labStudentName
             // 
-            this.labName.AutoSize = true;
-            this.labName.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labName.Location = new System.Drawing.Point(25, 27);
-            this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(43, 16);
-            this.labName.TabIndex = 8;
-            this.labName.Text = "姓名:";
+            this.labStudentName.AutoSize = true;
+            this.labStudentName.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labStudentName.Location = new System.Drawing.Point(25, 27);
+            this.labStudentName.Name = "labStudentName";
+            this.labStudentName.Size = new System.Drawing.Size(43, 16);
+            this.labStudentName.TabIndex = 8;
+            this.labStudentName.Text = "姓名:";
             // 
             // btnAddStudent
             // 
@@ -145,6 +145,7 @@
             this.btnRandomStore.TabIndex = 17;
             this.btnRandomStore.Text = "隨機儲存資料";
             this.btnRandomStore.UseVisualStyleBackColor = true;
+            this.btnRandomStore.Click += new System.EventHandler(this.btnRandomStore_Click);
             // 
             // button1
             // 
@@ -191,10 +192,10 @@
             // 
             this.listData.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.listData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Name,
-            this.Chinese,
-            this.English,
-            this.Math,
+            this.StudentName,
+            this.Chinesescore,
+            this.Englishscore,
+            this.Mathscore,
             this.TOTAL,
             this.AVG,
             this.Min,
@@ -207,25 +208,25 @@
             this.listData.UseCompatibleStateImageBehavior = false;
             this.listData.View = System.Windows.Forms.View.Details;
             // 
-            // Name
+            // StudentName
             // 
-            this.Name.Text = "姓名";
-            this.Name.Width = 75;
+            this.StudentName.Text = "姓名";
+            this.StudentName.Width = 75;
             // 
-            // Chinese
+            // Chinesescore
             // 
-            this.Chinese.Text = "國文";
-            this.Chinese.Width = 50;
+            this.Chinesescore.Text = "國文";
+            this.Chinesescore.Width = 50;
             // 
-            // English
+            // Englishscore
             // 
-            this.English.Text = "英文";
-            this.English.Width = 50;
+            this.Englishscore.Text = "英文";
+            this.Englishscore.Width = 50;
             // 
-            // Math
+            // Mathscore
             // 
-            this.Math.Text = "數學";
-            this.Math.Width = 50;
+            this.Mathscore.Text = "數學";
+            this.Mathscore.Width = 50;
             // 
             // TOTAL
             // 
@@ -265,9 +266,9 @@
             this.Controls.Add(this.labEnglish);
             this.Controls.Add(this.txtChineseScore);
             this.Controls.Add(this.labChinese);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.labName);
-            //this.Name = "StudentsGrade";
+            this.Controls.Add(this.txtStudentName);
+            this.Controls.Add(this.labStudentName);
+            this.Name = "StudentsGrade";
             this.Text = "StudentsGrade";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -282,8 +283,8 @@
         private System.Windows.Forms.Label labEnglish;
         private System.Windows.Forms.TextBox txtChineseScore;
         private System.Windows.Forms.Label labChinese;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label labName;
+        private System.Windows.Forms.TextBox txtStudentName;
+        private System.Windows.Forms.Label labStudentName;
         private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.Button btnRandomStore;
         private System.Windows.Forms.Button button1;
@@ -291,10 +292,10 @@
         private System.Windows.Forms.Button btnRandom20;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListView listData;
-        private System.Windows.Forms.ColumnHeader Name;
-        private System.Windows.Forms.ColumnHeader Chinese;
-        private System.Windows.Forms.ColumnHeader English;
-        private System.Windows.Forms.ColumnHeader Math;
+        private System.Windows.Forms.ColumnHeader StudentName;
+        private System.Windows.Forms.ColumnHeader Chinesescore;
+        private System.Windows.Forms.ColumnHeader Englishscore;
+        private System.Windows.Forms.ColumnHeader Mathscore;
         private System.Windows.Forms.ColumnHeader TOTAL;
         private System.Windows.Forms.ColumnHeader AVG;
         private System.Windows.Forms.ColumnHeader Min;
