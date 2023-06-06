@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -12,10 +13,10 @@ namespace IspanHomework
             InitializeComponent();
         }
         List<Student> lsstudents = new List<Student>();
-        Student st;
 
         private void btnAddStudent_Click(object sender, EventArgs e)
         {
+            Student st;
             st.StudentName = txtStudentName.Text;
             st.chineseScore = int.Parse(txtChineseScore.Text);
             st.EnglishScore = int.Parse(txtEnglishScore.Text);
@@ -24,8 +25,8 @@ namespace IspanHomework
             int TOTAL = 0;
             TOTAL = st.chineseScore + st.EnglishScore + st.MathScore;
             //平均
-            float AVG;
-            AVG = (float)TOTAL / 3;
+            double AVG;
+            AVG = (double)TOTAL / 3;
             //最高最低分
             string MaxSuject, MinSuject;
             int MaxScore, MinScore;
@@ -73,6 +74,7 @@ namespace IspanHomework
 
         private void btnRandomStore_Click(object sender, EventArgs e)
         {
+            Student st;
             //亂數
             Random Score_Random = new Random();
             st.StudentName = "";
@@ -83,8 +85,8 @@ namespace IspanHomework
             int TOTAL = 0;
             TOTAL = st.chineseScore + st.EnglishScore + st.MathScore;
             //平均
-            float AVG;
-            AVG = (float)TOTAL / 3;
+            double AVG;
+            AVG = (double)TOTAL / 3;
             //最高最低分
             string MaxSuject, MinSuject;
             int MaxScore, MinScore;
@@ -134,10 +136,15 @@ namespace IspanHomework
             listData.Items.Clear();
             listData2.Items.Clear();
             btnStatistics.Enabled = false;
+            btnAddStudent.Enabled = true;
+            btnRandom20.Enabled = true;
+            btnRandomStore.Enabled = true;
+            btnStatistics.Enabled = true;
         }
 
         private void btnRandom20_Click(object sender, EventArgs e)
-        {                
+        {
+            Student st;
             Random Score_Random = new Random();
             for (int j = 0; j < 20; j++)
             {
@@ -150,8 +157,8 @@ namespace IspanHomework
                 int TOTAL = 0;
                 TOTAL = st.chineseScore + st.EnglishScore + st.MathScore;
                 //平均
-                float AVG;
-                AVG = (float)TOTAL / 3;
+                double AVG;
+                AVG = (double)TOTAL / 3;
                 //最高最低分
                 string MaxSuject, MinSuject;
                 int MaxScore, MinScore;
@@ -196,40 +203,51 @@ namespace IspanHomework
                 btnStatistics.Enabled = true;
             }
         }
-        List<int> chiese= new List<int>();
-        List<int> english = new List<int>();
-        List<int> math = new List<int>();
 
-
+        List<double> chiese = new List<double>();
+        List<double> english = new List<double>();
+        List<double> math = new List<double>();
         private void btnStatistics_Click(object sender, EventArgs e)
         {
-            //未完成
             string chineseScoreSum = "0";
             string englishScoreSum = "0";
-            string mathScoresum = "0";
-            //foreach (ListViewItem item in listData.Items)
-            //{
-            //    chineseScoreSum += int.Parse(item.SubItems[2].Text);
-            //}
-            for (int i = 0; i < listData.Items.Count; i++)
+            string mathScoreSum = "0";
+
+            for (int Q = 0; Q < listData.Items.Count; Q++)
             {
-                chineseScoreSum += listData.Items[i].SubItems[1].Text;
-                englishScoreSum += listData.Items[i].SubItems[2].Text;
-                mathScoresum += listData.Items[i].SubItems[3].Text;
-                chiese.Add(int.Parse(listData.Items[i].SubItems[1].Text));
-                english.Add(int.Parse(listData.Items[i].SubItems[2].Text));
-                math.Add(int.Parse(listData.Items[i].SubItems[3].Text));
+                chineseScoreSum = (Convert.ToInt32(chineseScoreSum) + Convert.ToInt32(listData.Items[Q].SubItems[1].Text)).ToString();
+                englishScoreSum = (Convert.ToInt32(englishScoreSum) + Convert.ToInt32(listData.Items[Q].SubItems[2].Text)).ToString();
+                mathScoreSum = (Convert.ToInt32(mathScoreSum) + Convert.ToInt32(listData.Items[Q].SubItems[3].Text)).ToString();
 
+                chiese.Add(Convert.ToInt32(listData.Items[Q].SubItems[1].Text));
+                english.Add(Convert.ToInt32(listData.Items[Q].SubItems[2].Text));
+                math.Add(Convert.ToInt32(listData.Items[Q].SubItems[3].Text));
             }
+
             listData2.Items.Add("總分");
-            listData2.Items[0].SubItems.Add(chiese.ToString());
-            listData2.Items[0].SubItems.Add(english.ToString());
-            listData2.Items[0].SubItems.Add(math.ToString());
+            listData2.Items[0].SubItems.Add(chineseScoreSum);
+            listData2.Items[0].SubItems.Add(englishScoreSum);
+            listData2.Items[0].SubItems.Add(mathScoreSum);
 
+            listData2.Items.Add("平均");
+            listData2.Items[1].SubItems.Add(Math.Round(chiese.Sum() / listData.Items.Count, 1).ToString());
+            listData2.Items[1].SubItems.Add(Math.Round(english.Sum() / listData.Items.Count, 1).ToString());
+            listData2.Items[1].SubItems.Add(Math.Round(math.Sum() / listData.Items.Count, 1).ToString());
 
+            listData2.Items.Add("最高分");
+            listData2.Items[2].SubItems.Add(chiese.Max().ToString());
+            listData2.Items[2].SubItems.Add(english.Max().ToString());
+            listData2.Items[2].SubItems.Add(math.Max().ToString());
 
+            listData2.Items.Add("最低分");
+            listData2.Items[3].SubItems.Add(chiese.Min().ToString());
+            listData2.Items[3].SubItems.Add(english.Min().ToString());
+            listData2.Items[3].SubItems.Add(math.Min().ToString());
 
-
+            btnAddStudent.Enabled = false;
+            btnRandom20.Enabled = false;
+            btnRandomStore.Enabled = false;
+            btnStatistics.Enabled = false;
         }
     }
-    }
+}

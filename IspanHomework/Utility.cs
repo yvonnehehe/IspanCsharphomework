@@ -15,6 +15,7 @@ namespace IspanHomework
         public int chineseScore;
         public int EnglishScore;
         public int MathScore;
+
     }
 
 }

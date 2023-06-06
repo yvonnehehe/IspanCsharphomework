@@ -17,7 +17,7 @@ namespace IspanHomework
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MyClac());
+            Application.Run(new ScreenSaver());
         }
     }
 }

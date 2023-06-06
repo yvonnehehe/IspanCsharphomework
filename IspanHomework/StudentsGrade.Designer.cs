@@ -204,7 +204,7 @@
             this.listData.HideSelection = false;
             this.listData.Location = new System.Drawing.Point(185, 12);
             this.listData.Name = "listData";
-            this.listData.Size = new System.Drawing.Size(474, 247);
+            this.listData.Size = new System.Drawing.Size(492, 247);
             this.listData.TabIndex = 26;
             this.listData.UseCompatibleStateImageBehavior = false;
             this.listData.View = System.Windows.Forms.View.Details;
@@ -257,13 +257,17 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
+            this.listData2.GridLines = true;
+            this.listData2.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.listData2.HideSelection = false;
             this.listData2.Location = new System.Drawing.Point(185, 265);
             this.listData2.Name = "listData2";
-            this.listData2.Size = new System.Drawing.Size(474, 173);
+            this.listData2.RightToLeftLayout = true;
+            this.listData2.Scrollable = false;
+            this.listData2.Size = new System.Drawing.Size(492, 173);
             this.listData2.TabIndex = 27;
             this.listData2.UseCompatibleStateImageBehavior = false;
-            this.listData2.View = System.Windows.Forms.View.List;
+            this.listData2.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -289,7 +293,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 450);
+            this.ClientSize = new System.Drawing.Size(679, 450);
             this.Controls.Add(this.listData2);
             this.Controls.Add(this.listData);
             this.Controls.Add(this.btnRandom20);
