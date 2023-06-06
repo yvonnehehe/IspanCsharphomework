@@ -33,15 +33,19 @@ namespace IspanHomework
             listorderBox.Items.Clear(); // 清除舊的項目
             foreach (Product pro in lsProduct)
             {
-                string itemText = $"{pro.Name}   NT$ {pro.UnitPrice:C0}\n";
+                string itemText = $"{pro.Name}   {pro.UnitPrice:C0}\n";
                 listorderBox.Items.Add(itemText);
                 totalPrice += pro.UnitPrice;
             }
             listorderBox.Items.Add("--------------------------");
             listorderBox.Items.Add($"餐點數量:{lsProduct.Count}"); //Listbox的項目中預設不支援換行
             labTotal.Text = totalPrice.ToString("C0");
-
         }
+        //private void showadd()
+        //{
+        //    int result = 0;
+        //    if(btnHamburger_Click >= 1)
+        //}
 
         private void btnHamburger_Click(object sender, EventArgs e)
         {

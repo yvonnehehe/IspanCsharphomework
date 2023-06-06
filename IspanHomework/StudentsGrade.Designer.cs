@@ -38,10 +38,9 @@
             this.labStudentName = new System.Windows.Forms.Label();
             this.btnAddStudent = new System.Windows.Forms.Button();
             this.btnRandomStore = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStatistics = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnRandom20 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.listData = new System.Windows.Forms.ListView();
             this.StudentName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Chinesescore = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -51,6 +50,11 @@
             this.AVG = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Min = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Max = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listData2 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // txtMathScore
@@ -60,6 +64,7 @@
             this.txtMathScore.Name = "txtMathScore";
             this.txtMathScore.Size = new System.Drawing.Size(100, 27);
             this.txtMathScore.TabIndex = 15;
+            this.txtMathScore.Text = "77";
             // 
             // labMath
             // 
@@ -78,6 +83,7 @@
             this.txtEnglishScore.Name = "txtEnglishScore";
             this.txtEnglishScore.Size = new System.Drawing.Size(100, 27);
             this.txtEnglishScore.TabIndex = 13;
+            this.txtEnglishScore.Text = "100";
             // 
             // labEnglish
             // 
@@ -96,6 +102,7 @@
             this.txtChineseScore.Name = "txtChineseScore";
             this.txtChineseScore.Size = new System.Drawing.Size(100, 27);
             this.txtChineseScore.TabIndex = 11;
+            this.txtChineseScore.Text = "80";
             // 
             // labChinese
             // 
@@ -114,6 +121,7 @@
             this.txtStudentName.Name = "txtStudentName";
             this.txtStudentName.Size = new System.Drawing.Size(100, 27);
             this.txtStudentName.TabIndex = 9;
+            this.txtStudentName.Text = "何何";
             // 
             // labStudentName
             // 
@@ -147,16 +155,17 @@
             this.btnRandomStore.UseVisualStyleBackColor = true;
             this.btnRandomStore.Click += new System.EventHandler(this.btnRandomStore_Click);
             // 
-            // button1
+            // btnStatistics
             // 
-            this.button1.Enabled = false;
-            this.button1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(42, 238);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 27);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "各科統計";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnStatistics.Enabled = false;
+            this.btnStatistics.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStatistics.Location = new System.Drawing.Point(42, 238);
+            this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.Size = new System.Drawing.Size(115, 27);
+            this.btnStatistics.TabIndex = 18;
+            this.btnStatistics.Text = "各科統計";
+            this.btnStatistics.UseVisualStyleBackColor = true;
+            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
             // 
             // btnReset
             // 
@@ -167,6 +176,7 @@
             this.btnReset.TabIndex = 19;
             this.btnReset.Text = "重設所有資料";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnRandom20
             // 
@@ -177,16 +187,7 @@
             this.btnRandom20.TabIndex = 20;
             this.btnRandom20.Text = "隨機加入20筆";
             this.btnRandom20.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoEllipsis = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(185, 262);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(7);
-            this.label2.Size = new System.Drawing.Size(474, 155);
-            this.label2.TabIndex = 25;
+            this.btnRandom20.Click += new System.EventHandler(this.btnRandom20_Click);
             // 
             // listData
             // 
@@ -248,16 +249,52 @@
             this.Max.Text = "最高";
             this.Max.Width = 70;
             // 
+            // listData2
+            // 
+            this.listData2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.listData2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listData2.HideSelection = false;
+            this.listData2.Location = new System.Drawing.Point(185, 265);
+            this.listData2.Name = "listData2";
+            this.listData2.Size = new System.Drawing.Size(474, 173);
+            this.listData2.TabIndex = 27;
+            this.listData2.UseCompatibleStateImageBehavior = false;
+            this.listData2.View = System.Windows.Forms.View.List;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "";
+            this.columnHeader1.Width = 70;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "";
+            this.columnHeader2.Width = 50;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "";
+            this.columnHeader3.Width = 50;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "";
+            this.columnHeader4.Width = 50;
+            // 
             // StudentsGrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 450);
+            this.Controls.Add(this.listData2);
             this.Controls.Add(this.listData);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnRandom20);
             this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStatistics);
             this.Controls.Add(this.btnRandomStore);
             this.Controls.Add(this.btnAddStudent);
             this.Controls.Add(this.txtMathScore);
@@ -287,10 +324,9 @@
         private System.Windows.Forms.Label labStudentName;
         private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.Button btnRandomStore;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStatistics;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnRandom20;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListView listData;
         private System.Windows.Forms.ColumnHeader StudentName;
         private System.Windows.Forms.ColumnHeader Chinesescore;
@@ -300,5 +336,10 @@
         private System.Windows.Forms.ColumnHeader AVG;
         private System.Windows.Forms.ColumnHeader Min;
         private System.Windows.Forms.ColumnHeader Max;
+        private System.Windows.Forms.ListView listData2;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
