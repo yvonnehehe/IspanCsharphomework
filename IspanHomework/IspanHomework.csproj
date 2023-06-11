@@ -52,6 +52,12 @@
     <Compile Include="Alarm.Designer.cs">
       <DependentUpon>Alarm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForDoWhile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForDoWhile.Designer.cs">
+      <DependentUpon>ForDoWhile.cs</DependentUpon>
+    </Compile>
     <Compile Include="HelloForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     <Compile Include="Utility.cs" />
     <EmbeddedResource Include="Alarm.resx">
       <DependentUpon>Alarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForDoWhile.resx">
+      <DependentUpon>ForDoWhile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HelloForm.resx">
       <DependentUpon>HelloForm.cs</DependentUpon>

@@ -47,7 +47,6 @@ namespace IspanHomework
             splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(pos);
             pos.Show();
-
         }
 
         private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
@@ -57,6 +56,59 @@ namespace IspanHomework
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void btnStudentsGrade_Click(object sender, EventArgs e)
+        {
+            StudentsGrade SG = new StudentsGrade();
+            SG.TopLevel = false;
+            SG.Dock = DockStyle.None;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(SG);
+            SG.Show();
+        }
+
+        private void btnStudentStructForm_Click(object sender, EventArgs e)
+        {
+            Student_StructForm SSF = new Student_StructForm();
+            SSF.TopLevel = false;
+            SSF.Dock = DockStyle.None;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(SSF);
+            SSF.Show();
+
+        }
+
+        private void btnMyClac_Click(object sender, EventArgs e)
+        {
+            MyClac MC = new MyClac();
+            MC.TopLevel = false;
+            MC.Dock = DockStyle.None;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(MC);
+            MC.Show();
+        }
+
+        private void btnForDoWhile_Click(object sender, EventArgs e)
+        {
+            ForDoWhile FDW = new ForDoWhile();
+            FDW.TopLevel = false;
+            FDW.Dock = DockStyle.None;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(FDW);
+            FDW.Show();
+
+        }
+
+        private void btnAlarm_Click(object sender, EventArgs e)
+        {
+            Alarm alarm = new Alarm();
+            alarm.TopLevel = false;
+            alarm.Dock = DockStyle.None;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(alarm);
+            alarm.Show();
 
         }
     }

@@ -25,13 +25,7 @@ namespace IspanHomework
         {
             InitializeComponent();
         }
-            //Loan loan = new Loan();
-            //labAmountReport.Text = loanAmount.ToString();
-            //labmonthReport.Text = monthlyPayment.ToString();
-            //labRateReport.Text = rate.ToString();
-            //labTotalReport.Text = totalAmount.ToString();
-            //labYearReport.Text = year.ToString();
-        
+ 
 
     }
 }

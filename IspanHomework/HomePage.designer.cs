@@ -122,10 +122,11 @@
             this.btnAlarm.Location = new System.Drawing.Point(10, 603);
             this.btnAlarm.Margin = new System.Windows.Forms.Padding(0);
             this.btnAlarm.Name = "btnAlarm";
-            this.btnAlarm.Size = new System.Drawing.Size(146, 38);
+            this.btnAlarm.Size = new System.Drawing.Size(129, 38);
             this.btnAlarm.TabIndex = 27;
             this.btnAlarm.Text = "Alarm";
             this.btnAlarm.UseVisualStyleBackColor = true;
+            this.btnAlarm.Click += new System.EventHandler(this.btnAlarm_Click);
             // 
             // btnPictureViewer
             // 
@@ -135,7 +136,7 @@
             this.btnPictureViewer.Location = new System.Drawing.Point(10, 509);
             this.btnPictureViewer.Margin = new System.Windows.Forms.Padding(0);
             this.btnPictureViewer.Name = "btnPictureViewer";
-            this.btnPictureViewer.Size = new System.Drawing.Size(146, 38);
+            this.btnPictureViewer.Size = new System.Drawing.Size(129, 38);
             this.btnPictureViewer.TabIndex = 26;
             this.btnPictureViewer.Text = "Picture Viewer";
             this.btnPictureViewer.UseVisualStyleBackColor = true;
@@ -148,7 +149,7 @@
             this.btnPainter.Location = new System.Drawing.Point(10, 463);
             this.btnPainter.Margin = new System.Windows.Forms.Padding(0);
             this.btnPainter.Name = "btnPainter";
-            this.btnPainter.Size = new System.Drawing.Size(146, 38);
+            this.btnPainter.Size = new System.Drawing.Size(129, 38);
             this.btnPainter.TabIndex = 25;
             this.btnPainter.Text = "小畫家";
             this.btnPainter.UseVisualStyleBackColor = true;
@@ -161,7 +162,7 @@
             this.btnNotepad.Location = new System.Drawing.Point(10, 418);
             this.btnNotepad.Margin = new System.Windows.Forms.Padding(0);
             this.btnNotepad.Name = "btnNotepad";
-            this.btnNotepad.Size = new System.Drawing.Size(146, 38);
+            this.btnNotepad.Size = new System.Drawing.Size(129, 38);
             this.btnNotepad.TabIndex = 24;
             this.btnNotepad.Text = "NotePad";
             this.btnNotepad.UseVisualStyleBackColor = true;
@@ -174,7 +175,7 @@
             this.btnScreenSaver.Location = new System.Drawing.Point(10, 373);
             this.btnScreenSaver.Margin = new System.Windows.Forms.Padding(0);
             this.btnScreenSaver.Name = "btnScreenSaver";
-            this.btnScreenSaver.Size = new System.Drawing.Size(146, 38);
+            this.btnScreenSaver.Size = new System.Drawing.Size(129, 38);
             this.btnScreenSaver.TabIndex = 23;
             this.btnScreenSaver.Text = "Screen Saver";
             this.btnScreenSaver.UseVisualStyleBackColor = true;
@@ -187,7 +188,7 @@
             this.btnXOGame.Location = new System.Drawing.Point(10, 328);
             this.btnXOGame.Margin = new System.Windows.Forms.Padding(0);
             this.btnXOGame.Name = "btnXOGame";
-            this.btnXOGame.Size = new System.Drawing.Size(146, 38);
+            this.btnXOGame.Size = new System.Drawing.Size(129, 38);
             this.btnXOGame.TabIndex = 22;
             this.btnXOGame.Text = "XOGame";
             this.btnXOGame.UseVisualStyleBackColor = true;
@@ -200,10 +201,11 @@
             this.btnForDoWhile.Location = new System.Drawing.Point(10, 283);
             this.btnForDoWhile.Margin = new System.Windows.Forms.Padding(0);
             this.btnForDoWhile.Name = "btnForDoWhile";
-            this.btnForDoWhile.Size = new System.Drawing.Size(146, 38);
+            this.btnForDoWhile.Size = new System.Drawing.Size(129, 38);
             this.btnForDoWhile.TabIndex = 21;
             this.btnForDoWhile.Text = "ForDo While";
             this.btnForDoWhile.UseVisualStyleBackColor = true;
+            this.btnForDoWhile.Click += new System.EventHandler(this.btnForDoWhile_Click);
             // 
             // btnMyClac
             // 
@@ -213,10 +215,11 @@
             this.btnMyClac.Location = new System.Drawing.Point(10, 238);
             this.btnMyClac.Margin = new System.Windows.Forms.Padding(0);
             this.btnMyClac.Name = "btnMyClac";
-            this.btnMyClac.Size = new System.Drawing.Size(146, 38);
+            this.btnMyClac.Size = new System.Drawing.Size(129, 38);
             this.btnMyClac.TabIndex = 20;
             this.btnMyClac.Text = "MyClac";
             this.btnMyClac.UseVisualStyleBackColor = true;
+            this.btnMyClac.Click += new System.EventHandler(this.btnMyClac_Click);
             // 
             // btnGuess
             // 
@@ -226,7 +229,7 @@
             this.btnGuess.Location = new System.Drawing.Point(10, 556);
             this.btnGuess.Margin = new System.Windows.Forms.Padding(0);
             this.btnGuess.Name = "btnGuess";
-            this.btnGuess.Size = new System.Drawing.Size(146, 38);
+            this.btnGuess.Size = new System.Drawing.Size(129, 38);
             this.btnGuess.TabIndex = 19;
             this.btnGuess.Text = "Guess";
             this.btnGuess.UseVisualStyleBackColor = true;
@@ -239,10 +242,11 @@
             this.btnStudentsGrade.Location = new System.Drawing.Point(10, 193);
             this.btnStudentsGrade.Margin = new System.Windows.Forms.Padding(0);
             this.btnStudentsGrade.Name = "btnStudentsGrade";
-            this.btnStudentsGrade.Size = new System.Drawing.Size(146, 38);
+            this.btnStudentsGrade.Size = new System.Drawing.Size(129, 38);
             this.btnStudentsGrade.TabIndex = 18;
             this.btnStudentsGrade.Text = "StudentsGrade";
             this.btnStudentsGrade.UseVisualStyleBackColor = true;
+            this.btnStudentsGrade.Click += new System.EventHandler(this.btnStudentsGrade_Click);
             // 
             // btnStudentStructForm
             // 
@@ -252,10 +256,11 @@
             this.btnStudentStructForm.Location = new System.Drawing.Point(10, 148);
             this.btnStudentStructForm.Margin = new System.Windows.Forms.Padding(0);
             this.btnStudentStructForm.Name = "btnStudentStructForm";
-            this.btnStudentStructForm.Size = new System.Drawing.Size(146, 38);
+            this.btnStudentStructForm.Size = new System.Drawing.Size(129, 38);
             this.btnStudentStructForm.TabIndex = 17;
             this.btnStudentStructForm.Text = "Student_StructForm";
             this.btnStudentStructForm.UseVisualStyleBackColor = true;
+            this.btnStudentStructForm.Click += new System.EventHandler(this.btnStudentStructForm_Click);
             // 
             // btnPOS
             // 
@@ -265,7 +270,7 @@
             this.btnPOS.Location = new System.Drawing.Point(10, 103);
             this.btnPOS.Margin = new System.Windows.Forms.Padding(0);
             this.btnPOS.Name = "btnPOS";
-            this.btnPOS.Size = new System.Drawing.Size(146, 38);
+            this.btnPOS.Size = new System.Drawing.Size(129, 38);
             this.btnPOS.TabIndex = 16;
             this.btnPOS.Text = "POS";
             this.btnPOS.UseVisualStyleBackColor = true;
@@ -279,7 +284,7 @@
             this.btnLoan.Location = new System.Drawing.Point(10, 58);
             this.btnLoan.Margin = new System.Windows.Forms.Padding(0);
             this.btnLoan.Name = "btnLoan";
-            this.btnLoan.Size = new System.Drawing.Size(146, 38);
+            this.btnLoan.Size = new System.Drawing.Size(129, 38);
             this.btnLoan.TabIndex = 15;
             this.btnLoan.Text = "Loan";
             this.btnLoan.UseVisualStyleBackColor = true;
@@ -293,7 +298,7 @@
             this.btnHello.Location = new System.Drawing.Point(10, 12);
             this.btnHello.Margin = new System.Windows.Forms.Padding(0);
             this.btnHello.Name = "btnHello";
-            this.btnHello.Size = new System.Drawing.Size(146, 38);
+            this.btnHello.Size = new System.Drawing.Size(129, 38);
             this.btnHello.TabIndex = 14;
             this.btnHello.Text = "Hello";
             this.btnHello.UseVisualStyleBackColor = true;
