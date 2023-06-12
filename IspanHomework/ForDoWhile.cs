@@ -44,7 +44,7 @@ namespace IspanHomework
             }
         }
         private static int[] arr0611;
-        string reselt = "";
+        string result = "";
 
         void intArray() //數值的陣列
         {
@@ -53,23 +53,23 @@ namespace IspanHomework
             {
                 if (i == arr0611.Length - 1)
                 {
-                    reselt += arr0611[i]; //排除掉最後一位
+                    result += arr0611[i]; //排除掉最後一位
                 }
                 else
                 {
-                    reselt += arr0611[i] + " , ";
+                    result += arr0611[i] + " , ";
                 }
             }
         }
         private void btnArr0611MaxMin_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             intArray();
-            labResult.Text = "int陣列arr0611 [ " + reselt + " ]\n" + "最大值為" + arr0611.Max().ToString() + "\n最小值為" + arr0611.Min().ToString();
+            labResult.Text = "int陣列arr0611 [ " + result + " ]\n" + "最大值為" + arr0611.Max().ToString() + "\n最小值為" + arr0611.Min().ToString();
         }
         private void btnOddEvenCount_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             intArray();
             int num = 0;
             int Odd = 0; //儲存奇數的數量
@@ -86,7 +86,7 @@ namespace IspanHomework
                     Even++;
                 }
             }
-            labResult.Text = "int陣列arr0611 [ " + reselt + " ]\n" + "奇數共" + Odd + "\n偶數共" + Even;
+            labResult.Text = "int陣列arr0611 [ " + result + " ]\n" + "奇數共" + Odd + "\n偶數共" + Even;
         }
 
         private static string[] arr0611_Str;
@@ -98,18 +98,18 @@ namespace IspanHomework
             {
                 if (i == arr0611_Str.Length - 1)
                 {
-                    reselt += arr0611_Str[i];
+                    result += arr0611_Str[i];
                 }
                 else
                 {
-                    reselt += arr0611_Str[i] + "   ,   ";
+                    result += arr0611_Str[i] + "   ,   ";
                 }
             }
         }
 
         private void btnArr0611FindCAndc_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             strArray();
             //找C跟c的數量
             int count = 0;
@@ -124,11 +124,11 @@ namespace IspanHomework
                     count++;
                 }
             }
-            labResult.Text = "arr0611_Str陣列:   " + reselt + "\n有C及c的名字共有" + count + "個";
+            labResult.Text = "arr0611_Str陣列:   " + result + "\n有C及c的名字共有" + count + "個";
         }
         private void btnArr0611LongestName_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             strArray();
             string longString = ""; //儲存最長的名字
             int maxlength = 0; //儲存最長的名字的長度
@@ -141,7 +141,7 @@ namespace IspanHomework
                 }
             }
 
-            labResult.Text = "arr0611_Str陣列:   " + reselt + "\n最長的名字為" + longString;
+            labResult.Text = "arr0611_Str陣列:   " + result + "\n最長的名字為" + longString;
         }
 
         private void btnResultClear_Click(object sender, EventArgs e)
@@ -214,7 +214,7 @@ namespace IspanHomework
 
         private void btnSide1Inside0_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             int[,] arr = new int[rows, cols];
             for (int i = 0; i < rows; i++)
             {
@@ -234,16 +234,16 @@ namespace IspanHomework
             {
                 for (int j = 0; j < cols; j++)
                 {
-                    reselt += arr[i, j] + " ";
+                    result += arr[i, j] + " ";
                 }
-                reselt += "\n";
+                result += "\n";
             }
-            labResult.Text = reselt;
+            labResult.Text = result;
         }
 
         private void btnSide0Inside1_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             int[,] arr = new int[rows, cols];
             for (int i = 0; i < rows; i++)
             {
@@ -263,32 +263,32 @@ namespace IspanHomework
             {
                 for (int j = 0; j < cols; j++)
                 {
-                    reselt += arr[i, j] + " ";
+                    result += arr[i, j] + " ";
                 }
-                reselt += "\n";
+                result += "\n";
             }
-            labResult.Text = reselt;
+            labResult.Text = result;
         }
 
         private void btn101010And010101_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < cols; j++)
                 {
                     if ((i + j) % 2 == 0)
                     {
-                        reselt += "1";
+                        result += "1";
                     }
                     else
                     {
-                        reselt += "0";
+                        result += "0";
                     }
                 }
-                reselt += "\n";
+                result += "\n";
             }
-            labResult.Text = reselt;
+            labResult.Text = result;
         }
         void swap(ref int a, ref int b)
         {
@@ -306,87 +306,86 @@ namespace IspanHomework
 
         private void btnSumArr0611_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             int sum = 0;
             intArray();
             for (int i = 0; i < arr0611.Length; i++)
             {
                 sum += arr0611[i];
             }
-            labResult.Text = "int陣列arr0611 [ " + reselt + " ]\n" + "加總為" + sum;
+            labResult.Text = "int陣列arr0611 [ " + result + " ]\n" + "加總為" + sum;
 
         }
 
         private void btnMaxArr0611_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             intArray();
-            labResult.Text = "int陣列arr0611 [ " + reselt + " ]\n" + "最大值為" + arr0611.Max().ToString();
+            labResult.Text = "int陣列arr0611 [ " + result + " ]\n" + "最大值為" + arr0611.Max().ToString();
         }
 
         private void btnMinArr0611_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             intArray();
-            labResult.Text = "int陣列arr0611 [ " + reselt + " ]\n" + "最小值為" + arr0611.Min().ToString();
+            labResult.Text = "int陣列arr0611 [ " + result + " ]\n" + "最小值為" + arr0611.Min().ToString();
         }
 
         private void btnChristmasTree_Click(object sender, EventArgs e)
         {
-            reselt = "";
-            int R = int.Parse(txtRows.Text);
-            for (int i = 0; i < R; i++)
+            result = "";
+            int R;
+            if (int.TryParse(txtRows.Text, out R))
             {
-                for (int j = 0; j <= i; j++)
+                for (int i = 0; i < R; i++)
                 {
-                    reselt += "*";
+                    for (int j = 0; j <= i; j++)
+                    {
+                        result += "*";
+                    }
+                    result += "\n";
                 }
-                reselt += "\n";
+                labResult.Text = result;
             }
-            labResult.Text = reselt;
+            else
+            {
+                MessageBox.Show("請輸入數字");
+                txtRows.Focus();
+            }
         }
 
         private void btnNineNineTable_Click(object sender, EventArgs e)
         {
-            reselt = "";
+            result = "";
             int count = 0;
-            //for (int i = 2; i <= 9; i++)
-            //{
-            //    for (int j = 1; j <= 9; j++)
-            //    {
-            //        reselt += i + "x" + j + "=" + i * j + "\t";
-            //    }
-            //    reselt += "\n";
-            //}
-            //labResult.Text = reselt;
             for (int i = 1; i <= 9; i++)
             {
                 for (int j = 1; j <= 8; j++)
                 {
                     for (int k = j; k <= j; k++)
                     {
-                        string equation;
+                        string add;
                         if ((k + 1) * i < 10)
                         {
-                            equation = "  " + ((k + 1) * i); // 小於 10 的數字前補一個空格
+                            add = "  " + ((k + 1) * i); // 小於 10 的數字前補一個空格
                         }
                         else
                         {
-                            equation = ((k + 1) * i).ToString();
+                            add = ((k + 1) * i).ToString();
                         }
-                        reselt += $"{k + 1} x {i} = {equation} \t";
+                        result += $"{k + 1} x {i} = {add} \t";
                         count++;
                         if (count % 10 == 0)  // 每10個乘法運算式換行
                         {
-                            reselt += "\n";
+                            result += "\n";
                         }
                     }
-                    reselt += "| ";
+                    result += "| ";
                 }
-                reselt += "\n";
+                result += "\n";
                 count = 0; // 重置計數器
             }
-            labResult.Text = reselt;
+            labResult.Text = result;
 
         }
 

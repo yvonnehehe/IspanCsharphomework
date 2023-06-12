@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -47,16 +48,6 @@ namespace IspanHomework
             splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(pos);
             pos.Show();
-        }
-
-        private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnStudentsGrade_Click(object sender, EventArgs e)
@@ -109,7 +100,33 @@ namespace IspanHomework
             splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(alarm);
             alarm.Show();
+        }
 
+        private void btnScreenSaver_Click(object sender, EventArgs e)
+        {
+            ScreenSaver ScreenSaver = new ScreenSaver();
+            splitContainer2.Panel2.Controls.Clear();
+            ScreenSaver.Show();
+        }
+
+        private void btnXOGame_Click(object sender, EventArgs e)
+        {
+            XOGame XO = new XOGame();
+            XO.TopLevel = false;
+            XO.Dock = DockStyle.None;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(XO);
+            XO.Show();
+        }
+
+        private void btnGuess_Click(object sender, EventArgs e)
+        {
+            Guess guess = new Guess();
+            guess.TopLevel = false;
+            guess.Dock = DockStyle.None;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(guess);
+            guess.Show();
         }
     }
 }

@@ -12,76 +12,41 @@ namespace IspanHomework
 {
     public partial class ScreenSaver : Form
     {
-        private Timer timer;
-        private PictureBox pictureBox;
-        private Random random;
-        private int stepSize;
-        //public ScreenSaver()
-        //{
-        //    InitializeComponent();
-        //}
         public ScreenSaver()
         {
-            // 设置窗体样式以实现全屏
-            FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
-            TopMost = true;
-            Cursor.Hide();
-
-            // 创建定时器并设置间隔时间
-            timer = new Timer();
-            timer.Interval = 100;
-
-            // 创建PictureBox控件并设置初始位置
-            pictureBox = new PictureBox();
-            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox.Location = new Point(0, 0);
-
-            // 设置PictureBox的Image属性为你想要的小图片
-            pictureBox.Image = Properties.Resources._11; // 替换为你的图片资源
-
-            // 随机生成小图片的步进值
-            random = new Random();
-            stepSize = 10;
-
-            // 将PictureBox添加到窗体中
-            Controls.Add(pictureBox);
-
-            // 设置定时器的Tick事件处理程序
-            timer.Tick += Timer_Tick;
+            InitializeComponent();
+            Controls.Add(pictureBox1);
+            timer1.Start();
         }
-
-        protected override void OnLoad(EventArgs e)
+        int runX = 5, runY = 5; //控制移動距離
+        private Point Location;
+        private void ScreenSaver_MouseMove(object sender, MouseEventArgs e)
         {
-            base.OnLoad(e);
-            StartScreensaver();
+            int D = Math.Abs(Cursor.Position.X - Location.X) + Math.Abs(Cursor.Position.Y - Location.Y);
+            if (D > 700)
+            {
+                this.Close();
+            }
         }
-
-        private void StartScreensaver()
+        private void MoveImage()
         {
-            // 启动定时器
-            timer.Start();
+            pictureBox1.Location = new Point(pictureBox1.Left + runX, pictureBox1.Top + runY);
+
+            if (pictureBox1.Left < 0 || pictureBox1.Right >= this.ClientSize.Width)
+            {
+                runX = -runX;
+            }
+            if (pictureBox1.Top < 0 || pictureBox1.Bottom >= this.ClientSize.Height)
+            {
+                runY = -runY;
+            }
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            // 随机生成小图片的新位置
-            int newX = pictureBox.Location.X + random.Next(-stepSize, stepSize);
-            int newY = pictureBox.Location.Y + random.Next(-stepSize, stepSize);
-
-            // 限制小图片在屏幕范围内移动
-            newX = Math.Max(0, Math.Min(newX, Width - pictureBox.Width));
-            newY = Math.Max(0, Math.Min(newY, Height - pictureBox.Height));
-
-            // 更新小图片的位置
-            pictureBox.Location = new Point(newX, newY);
+            MoveImage();
         }
 
-        protected override void OnKeyDown(KeyEventArgs e)
-        {
-            base.OnKeyDown(e);
-            Application.Exit(); // 按下任意键退出屏幕保护程序
-        }
     }
 
 
