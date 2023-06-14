@@ -42,7 +42,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::IspanHomework.Properties.Resources._12;
+            this.pictureBox1.BackgroundImage = global::IspanHomework.Properties.Resources.確認過眼神;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(69, 10);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.pictureBox1.Name = "pictureBox1";
