@@ -33,7 +33,7 @@ namespace IspanHomework
             totalPrice = 0;
             foreach (Product pro in lsProduct)
             {
-                string itemText = $"{pro.Name}  X{pro.Qty}  {pro.UnitPrice*pro.Qty:C0}\n";
+                string itemText = $"{pro.Name}  X{pro.Qty}  {pro.UnitPrice * pro.Qty:C0}\n";
                 listorderBox.Items.Add(itemText);
                 totalPrice += pro.UnitPrice * pro.Qty;
             }
@@ -130,12 +130,12 @@ namespace IspanHomework
             }
             ShowMenu();
         }
-    
-            //Product pro;
-            //pro.Name = "薯條";
-            //pro.UnitPrice = 60;
-            //lsProduct.Add(pro);
-            //ShowMenu();
+
+        //Product pro;
+        //pro.Name = "薯條";
+        //pro.UnitPrice = 60;
+        //lsProduct.Add(pro);
+        //ShowMenu();
 
         private void btnHotdog_Click(object sender, EventArgs e)
         {
@@ -154,18 +154,18 @@ namespace IspanHomework
                     break;
                 }
             }
-                if (!Qproduct)
+            if (!Qproduct)
+            {
+                Product pro = new Product
                 {
-                    Product pro = new Product
-                    {
-                        Name = "熱狗",
-                        UnitPrice = 135,
-                        Qty = 1
-                    };
-                    lsProduct.Add(pro);
-                }
-                ShowMenu();
+                    Name = "熱狗",
+                    UnitPrice = 135,
+                    Qty = 1
+                };
+                lsProduct.Add(pro);
             }
+            ShowMenu();
+        }
 
         private void btnListClear_Click(object sender, EventArgs e)
         {
@@ -175,13 +175,28 @@ namespace IspanHomework
 
         private void btnCash_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"總金額: {totalPrice:C0}");
+            if (totalPrice > 0)
+            {
+
+                MessageBox.Show($"總金額: {totalPrice:C0}");
+            }
+            else
+            {
+                MessageBox.Show("未選取餐點");
+            }
         }
 
         private void btnCreditCard_Click(object sender, EventArgs e)
         {
             decimal CreditCardtotalPrice = totalPrice * 0.9m;
-            MessageBox.Show($"總金額: {totalPrice:C0}\n折扣後金額: {CreditCardtotalPrice:C0}");
+            if (totalPrice > 0)
+            {
+                MessageBox.Show($"總金額: {totalPrice:C0}\n折扣後金額: {CreditCardtotalPrice:C0}");
+            }
+            else
+            {
+                MessageBox.Show("未選取餐點");
+            }
         }
     }
 }

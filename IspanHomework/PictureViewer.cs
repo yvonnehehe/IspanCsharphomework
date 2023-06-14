@@ -18,85 +18,85 @@ namespace IspanHomework
         public PictureViewer()
         {
             InitializeComponent();
-            resourcesPicture();
         }
-        FolderBrowserDialog folderBrowserDialog;
-        string folderPath;
-        string[] imagePath;
-        public void resourcesPicture()
+        private void picture(PictureBox pictureBox)
         {
-            List<Image> dynamicImageList = new List<Image>();
-            var resourceSet = Properties.Resources.ResourceManager.GetResourceSet(CultureInfo.InvariantCulture, true, false);
-            if (resourceSet != null)
-            {
-                foreach (DictionaryEntry entry in resourceSet)
-                {
-                    var value = entry.Value as Bitmap;
-                    if (value != null)
-                    {
-                        dynamicImageList.Add((Image)value);
-                    }
-                }
-            }
-            foreach (Image item in dynamicImageList)
-            {
-                PictureBox PB = new PictureBox();
-                PB.Size = new Size(100, 100);
-                PB.SizeMode = PictureBoxSizeMode.Zoom;
-                PB.Image = item;
-                flowLayoutPanel1.Controls.Add(PB);
-                PB.MouseClick += PB_MouseClick;
-            }
+            PictureForm pictureForm = new PictureForm(pictureBox.Image);
+            pictureForm.ShowDialog();
         }
-            public void pictureBox()
-            {
-
-                foreach (string item in imagePath)
-                {
-                    PictureBox PB = new PictureBox();
-                    PB.Size = new Size(200, 200);
-                    PB.SizeMode = PictureBoxSizeMode.Zoom;
-                    PB.Image = Image.FromFile(item);
-                flowLayoutPanel1.Controls.Add(PB);
-                    PB.MouseClick += PB_MouseClick;
-                }
-
-            }
-            private void PB_MouseClick(object sender, MouseEventArgs e)
-            {
-                Form singleImgForm = new Form();
-                singleImgForm.BackgroundImage = ((PictureBox)sender).Image;
-                singleImgForm.BackgroundImageLayout = ImageLayout.Zoom;
-                singleImgForm.Show();
-            }
-
-        
-
-        private void 開啟資料夾ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            folderBrowserDialog = new FolderBrowserDialog();
-            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
-            {
-                folderPath = folderBrowserDialog.SelectedPath;
-                imagePath = Directory.GetFiles(folderPath, "*.jp*");
-            }
+            picture((PictureBox)sender);
+        }
 
-            // Clear current picture box
-            List<Control> listControls = new List<Control>();
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
 
-            foreach (Control control in flowLayoutPanel1.Controls)
-            {
-                listControls.Add(control);
-            }
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
 
-            foreach (Control control in listControls)
-            {
-                flowLayoutPanel1.Controls.Remove(control);
-                control.Dispose();
-            }
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
 
-            pictureBox();
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
 
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            picture((PictureBox)sender);
         }
     }
 }

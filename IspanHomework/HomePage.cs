@@ -128,5 +128,16 @@ namespace IspanHomework
             splitContainer2.Panel2.Controls.Add(guess);
             guess.Show();
         }
+
+        private void btnPictureViewer_Click(object sender, EventArgs e)
+        {
+            PictureViewer PV = new PictureViewer();
+            PV.TopLevel = false;
+            PV.Dock = DockStyle.None;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(PV);
+            PV.Show();
+
+        }
     }
 }

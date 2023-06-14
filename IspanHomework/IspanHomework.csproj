@@ -58,6 +58,12 @@
     <Compile Include="ForDoWhile.Designer.cs">
       <DependentUpon>ForDoWhile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Guess-1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guess-1.Designer.cs">
+      <DependentUpon>Guess-1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Guess.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,12 @@
     </Compile>
     <Compile Include="MyClac.Designer.cs">
       <DependentUpon>MyClac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PictureForm.Designer.cs">
+      <DependentUpon>PictureForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PictureViewer.cs">
       <SubType>Form</SubType>
@@ -144,6 +156,9 @@
     <EmbeddedResource Include="ForDoWhile.resx">
       <DependentUpon>ForDoWhile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Guess-1.resx">
+      <DependentUpon>Guess-1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Guess.resx">
       <DependentUpon>Guess.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyClac.resx">
       <DependentUpon>MyClac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureForm.resx">
+      <DependentUpon>PictureForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PictureViewer.resx">
       <DependentUpon>PictureViewer.cs</DependentUpon>

@@ -12,9 +12,9 @@ namespace IspanHomework
 {
     public partial class Loan_Report : Form
     {
-        public void Update(int loanAmount, int year, decimal rate, int monthlyPayment, int totalAmount)
+        public void Update(int LoanAmount, int year, decimal rate, int monthlyPayment, int totalAmount)
         {
-            labAmountReport.Text = loanAmount.ToString();
+            labAmountReport.Text = LoanAmount.ToString();
             labmonthReport.Text = monthlyPayment.ToString();
             labRateReport.Text = rate.ToString();
             labTotalReport.Text = totalAmount.ToString();
