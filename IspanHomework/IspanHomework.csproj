@@ -106,6 +106,12 @@
     <Compile Include="Notepad.Designer.cs">
       <DependentUpon>Notepad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Painter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Painter.Designer.cs">
+      <DependentUpon>Painter.cs</DependentUpon>
+    </Compile>
     <Compile Include="PictureForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Notepad.resx">
       <DependentUpon>Notepad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Painter.resx">
+      <DependentUpon>Painter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PictureForm.resx">
       <DependentUpon>PictureForm.cs</DependentUpon>

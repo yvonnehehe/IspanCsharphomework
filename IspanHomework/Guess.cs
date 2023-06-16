@@ -16,19 +16,19 @@ namespace IspanHomework
         public Guess()
         {
             InitializeComponent();
-            Random rm = new Random();
-            Answer = rm.Next(1, 101);
         }
         public int Answer;
+        Random rm = new Random();
         private void btnShowAnswer_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Answer.ToString());
+            MessageBox.Show("Answer: "+Answer.ToString());
         }
 
         public void btnGuess_Click(object sender, EventArgs e)
         {
+            Answer = rm.Next(1, 101);
             Guess_1 guess_1 = new Guess_1(Answer, this);
-            guess_1.Show();
+            DialogResult result = guess_1.ShowDialog();
         }
     }
 }

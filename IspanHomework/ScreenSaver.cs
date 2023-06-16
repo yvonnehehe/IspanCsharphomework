@@ -21,7 +21,6 @@ namespace IspanHomework
             timer1.Start();
         }
         int runX = 5, runY = 5; //控制移動距離
-        //private Point Location;
         private void ScreenSaver_MouseMove(object sender, MouseEventArgs e)
         {
             if (enableMouseMove)
@@ -48,8 +47,6 @@ namespace IspanHomework
         }
         private void ScreenSaver_Load(object sender, EventArgs e)
         {
-            //int MouseSiteX = MousePosition.X;
-            //int MouseSiteY = MousePosition.Y;
             Location = MousePosition;
         }
 

@@ -24,12 +24,15 @@ namespace IspanHomework
             hour = DateTime.Now.Hour;
             second = DateTime.Now.Second;
             minute = DateTime.Now.Minute;
+            //ff = DateTime.Now.Millisecond.ToString("fff");
+
             labHour.Text = hour.ToString("00");
             labMinute.Text = minute.ToString("00");
             labSecond.Text = second.ToString("00");
             ring_alarm();
         }
-        int hour,second,minute;
+        int hour, minute, second;
+        string ff;
         string alarmhour, alarmminute;
         private void Alarm_Load(object sender, EventArgs e)
         {
@@ -54,7 +57,9 @@ namespace IspanHomework
             if (alarmhour == hour.ToString() && alarmminute == minute.ToString() && second.ToString() == "0")
             {
                 MessageBox.Show("Times up!!!!");
+                checkBox1.Checked = false;
             }
+            
         }
     }
 }

@@ -137,6 +137,26 @@ namespace IspanHomework
             splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(PV);
             PV.Show();
+        }
+
+        private void btnNotepad_Click(object sender, EventArgs e)
+        {
+            Notepad NP = new Notepad();
+            NP.TopLevel = false;
+            NP.Dock = DockStyle.None;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(NP);
+            NP.Show();
+        }
+
+        private void btnPainter_Click(object sender, EventArgs e)
+        {
+            Painter painter = new Painter();
+            painter.TopLevel = false;
+            painter.Dock = DockStyle.None;
+            splitContainer2.Panel2.Controls.Clear();
+            splitContainer2.Panel2.Controls.Add(painter);
+            painter.Show();
 
         }
     }

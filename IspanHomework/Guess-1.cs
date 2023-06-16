@@ -25,7 +25,6 @@ namespace IspanHomework
         int Min = 1;
         int Max = 100;
 
-
         public void GuessNum()
         {
             do
@@ -57,7 +56,6 @@ namespace IspanHomework
                 }
 
             } while (false);
-
         }
         private void btnEnter_Click(object sender, EventArgs e)
         {
