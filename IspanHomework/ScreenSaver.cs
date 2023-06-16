@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,21 +13,31 @@ namespace IspanHomework
 {
     public partial class ScreenSaver : Form
     {
+        bool enableMouseMove = false;
+        Timer timer;
         public ScreenSaver()
         {
             InitializeComponent();
             Controls.Add(pictureBox1);
-            timer1.Start();
+            timer = new Timer();
+            timer.Interval = 100;
+            timer.Tick += Timer_Tick;
+            timer.Start();
+
         }
         int runX = 5, runY = 5; //控制移動距離
-        private Point Location;
+        //private Point Location;
         private void ScreenSaver_MouseMove(object sender, MouseEventArgs e)
         {
-            int D = Math.Abs(Cursor.Position.X - Location.X) + Math.Abs(Cursor.Position.Y - Location.Y);
-            if (D > 700)
+            if (enableMouseMove)
             {
-                this.Close();
+                int D = Math.Abs(Cursor.Position.X - Location.X) + Math.Abs(Cursor.Position.Y - Location.Y);
+                if (D > 700)
+                {
+                    this.Close();
+                }
             }
+
         }
         private void MoveImage()
         {
@@ -45,10 +56,13 @@ namespace IspanHomework
         {
             int MouseSiteX = MousePosition.X;
             int MouseSiteY = MousePosition.Y;
+            //Location = MousePosition;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
+            //timer.Stop();
+            enableMouseMove = true;
             MoveImage();
         }
 
