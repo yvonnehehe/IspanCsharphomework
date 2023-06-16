@@ -117,5 +117,54 @@ namespace IspanHomework
         {
             textBox1.ForeColor = Color.Black;
         }
+
+        private void 開啟OToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = File.ReadAllText(openFileDialog1.FileName, Encoding.Default);
+            }
+        }
+
+        private void 儲存SToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.FileName == "")
+            {
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    File.WriteAllText(saveFileDialog1.FileName, textBox1.Text, Encoding.Default);
+                }
+            }
+            else
+            {
+                File.WriteAllText(openFileDialog1.FileName, textBox1.Text, Encoding.Default);
+            }
+        }
+
+        private void 剪下UToolStripButton_Click(object sender, EventArgs e)
+        {
+            textBox1.Cut();
+        }
+
+        private void 複製CToolStripButton_Click(object sender, EventArgs e)
+        {
+            textBox1.Copy();
+        }
+
+        private void 貼上PToolStripButton_Click(object sender, EventArgs e)
+        {
+            textBox1.Paste();
+        }
+
+        private void 說明LToolStripButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("此版本為何彥儀在資策會C#全端班的記事本作業，\n請勿用於商業用途，謝謝!", "關於");
+        }
+
+        private void 新增NToolStripButton_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.FileName = "";
+            textBox1.Clear();
+        }
     }
 }

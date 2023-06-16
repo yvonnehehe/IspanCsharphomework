@@ -181,4 +181,55 @@
   <data name="P9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\P9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="儲存SToolStripButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\儲存SToolStripButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="儲存SToolStripMenuItem_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\儲存SToolStripMenuItem.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="列印PToolStripButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\列印PToolStripButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="列印PToolStripMenuItem_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\列印PToolStripMenuItem.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="剪下TToolStripMenuItem_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\剪下TToolStripMenuItem.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="剪下UToolStripButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\剪下UToolStripButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="擷取" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\擷取.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="新增NToolStripButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\新增NToolStripButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="新增NToolStripMenuItem_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\新增NToolStripMenuItem.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="複製CToolStripButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\複製CToolStripButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="複製CToolStripMenuItem_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\複製CToolStripMenuItem.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="說明LToolStripButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\說明LToolStripButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="貼上PToolStripButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\貼上PToolStripButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="貼上PToolStripMenuItem_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\貼上PToolStripMenuItem.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="開啟OToolStripButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\開啟OToolStripButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="開啟OToolStripMenuItem_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\開啟OToolStripMenuItem.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="預覽列印VToolStripMenuItem_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\預覽列印VToolStripMenuItem.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

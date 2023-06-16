@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notepad));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.檔案FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新增NToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -128,77 +127,77 @@
             // 
             // 新增NToolStripMenuItem
             // 
-            this.新增NToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("新增NToolStripMenuItem.Image")));
+            this.新增NToolStripMenuItem.Image = global::IspanHomework.Properties.Resources.新增NToolStripMenuItem_Image;
             this.新增NToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.新增NToolStripMenuItem.Name = "新增NToolStripMenuItem";
             this.新增NToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.新增NToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.新增NToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.新增NToolStripMenuItem.Text = "新增(&N)";
             this.新增NToolStripMenuItem.Click += new System.EventHandler(this.新增NToolStripMenuItem_Click);
             // 
             // 開啟OToolStripMenuItem
             // 
-            this.開啟OToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("開啟OToolStripMenuItem.Image")));
+            this.開啟OToolStripMenuItem.Image = global::IspanHomework.Properties.Resources.開啟OToolStripMenuItem_Image;
             this.開啟OToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.開啟OToolStripMenuItem.Name = "開啟OToolStripMenuItem";
             this.開啟OToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.開啟OToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.開啟OToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.開啟OToolStripMenuItem.Text = "開啟(&O)";
             this.開啟OToolStripMenuItem.Click += new System.EventHandler(this.開啟OToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(158, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
             // 
             // 儲存SToolStripMenuItem
             // 
-            this.儲存SToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("儲存SToolStripMenuItem.Image")));
+            this.儲存SToolStripMenuItem.Image = global::IspanHomework.Properties.Resources.儲存SToolStripMenuItem_Image;
             this.儲存SToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.儲存SToolStripMenuItem.Name = "儲存SToolStripMenuItem";
             this.儲存SToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.儲存SToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.儲存SToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.儲存SToolStripMenuItem.Text = "儲存(&S)";
             this.儲存SToolStripMenuItem.Click += new System.EventHandler(this.儲存SToolStripMenuItem_Click);
             // 
             // 另存新檔AToolStripMenuItem
             // 
             this.另存新檔AToolStripMenuItem.Name = "另存新檔AToolStripMenuItem";
-            this.另存新檔AToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.另存新檔AToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.另存新檔AToolStripMenuItem.Text = "另存新檔(&A)";
             this.另存新檔AToolStripMenuItem.Click += new System.EventHandler(this.另存新檔AToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(158, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // 列印PToolStripMenuItem
             // 
-            this.列印PToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("列印PToolStripMenuItem.Image")));
+            this.列印PToolStripMenuItem.Image = global::IspanHomework.Properties.Resources.列印PToolStripMenuItem_Image;
             this.列印PToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.列印PToolStripMenuItem.Name = "列印PToolStripMenuItem";
             this.列印PToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.列印PToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.列印PToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.列印PToolStripMenuItem.Text = "列印(&P)";
             // 
             // 預覽列印VToolStripMenuItem
             // 
-            this.預覽列印VToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("預覽列印VToolStripMenuItem.Image")));
+            this.預覽列印VToolStripMenuItem.Image = global::IspanHomework.Properties.Resources.預覽列印VToolStripMenuItem_Image;
             this.預覽列印VToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.預覽列印VToolStripMenuItem.Name = "預覽列印VToolStripMenuItem";
-            this.預覽列印VToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.預覽列印VToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.預覽列印VToolStripMenuItem.Text = "預覽列印(&V)";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(158, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // 結束XToolStripMenuItem
             // 
             this.結束XToolStripMenuItem.Name = "結束XToolStripMenuItem";
-            this.結束XToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.結束XToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.結束XToolStripMenuItem.Text = "結束(&X)";
             this.結束XToolStripMenuItem.Click += new System.EventHandler(this.結束XToolStripMenuItem_Click);
             // 
@@ -238,7 +237,7 @@
             // 
             // 剪下TToolStripMenuItem
             // 
-            this.剪下TToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("剪下TToolStripMenuItem.Image")));
+            this.剪下TToolStripMenuItem.Image = global::IspanHomework.Properties.Resources.剪下TToolStripMenuItem_Image;
             this.剪下TToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.剪下TToolStripMenuItem.Name = "剪下TToolStripMenuItem";
             this.剪下TToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
@@ -248,7 +247,7 @@
             // 
             // 複製CToolStripMenuItem
             // 
-            this.複製CToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("複製CToolStripMenuItem.Image")));
+            this.複製CToolStripMenuItem.Image = global::IspanHomework.Properties.Resources.複製CToolStripMenuItem_Image;
             this.複製CToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.複製CToolStripMenuItem.Name = "複製CToolStripMenuItem";
             this.複製CToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
@@ -258,7 +257,7 @@
             // 
             // 貼上PToolStripMenuItem
             // 
-            this.貼上PToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("貼上PToolStripMenuItem.Image")));
+            this.貼上PToolStripMenuItem.Image = global::IspanHomework.Properties.Resources.貼上PToolStripMenuItem_Image;
             this.貼上PToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.貼上PToolStripMenuItem.Name = "貼上PToolStripMenuItem";
             this.貼上PToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
@@ -315,14 +314,14 @@
             // 顏色ToolStripMenuItem
             // 
             this.顏色ToolStripMenuItem.Name = "顏色ToolStripMenuItem";
-            this.顏色ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.顏色ToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.顏色ToolStripMenuItem.Text = "顏色(C)";
             this.顏色ToolStripMenuItem.Click += new System.EventHandler(this.顏色ToolStripMenuItem_Click);
             // 
             // 字型VToolStripMenuItem
             // 
             this.字型VToolStripMenuItem.Name = "字型VToolStripMenuItem";
-            this.字型VToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.字型VToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.字型VToolStripMenuItem.Text = "字型(V)";
             this.字型VToolStripMenuItem.Click += new System.EventHandler(this.字型VToolStripMenuItem_Click);
             // 
@@ -352,34 +351,34 @@
             this.blieToolStripMenuItem,
             this.blackToolStripMenuItem});
             this.快選顏色ToolStripMenuItem.Name = "快選顏色ToolStripMenuItem";
-            this.快選顏色ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.快選顏色ToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.快選顏色ToolStripMenuItem.Text = "快選顏色";
             // 
             // redToolStripMenuItem
             // 
             this.redToolStripMenuItem.Name = "redToolStripMenuItem";
-            this.redToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.redToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.redToolStripMenuItem.Text = "Red";
             this.redToolStripMenuItem.Click += new System.EventHandler(this.redToolStripMenuItem_Click);
             // 
             // greenToolStripMenuItem
             // 
             this.greenToolStripMenuItem.Name = "greenToolStripMenuItem";
-            this.greenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.greenToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.greenToolStripMenuItem.Text = "Green";
             this.greenToolStripMenuItem.Click += new System.EventHandler(this.greenToolStripMenuItem_Click);
             // 
             // blieToolStripMenuItem
             // 
             this.blieToolStripMenuItem.Name = "blieToolStripMenuItem";
-            this.blieToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.blieToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.blieToolStripMenuItem.Text = "Blue";
             this.blieToolStripMenuItem.Click += new System.EventHandler(this.blieToolStripMenuItem_Click);
             // 
             // blackToolStripMenuItem
             // 
             this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
-            this.blackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.blackToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.blackToolStripMenuItem.Text = "Black";
             this.blackToolStripMenuItem.Click += new System.EventHandler(this.blackToolStripMenuItem_Click);
             // 
@@ -421,7 +420,7 @@
             // 關於AToolStripMenuItem
             // 
             this.關於AToolStripMenuItem.Name = "關於AToolStripMenuItem";
-            this.關於AToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.關於AToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.關於AToolStripMenuItem.Text = "關於(&A)...";
             this.關於AToolStripMenuItem.Click += new System.EventHandler(this.關於AToolStripMenuItem_Click);
             // 
@@ -447,34 +446,37 @@
             // 新增NToolStripButton
             // 
             this.新增NToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.新增NToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("新增NToolStripButton.Image")));
+            this.新增NToolStripButton.Image = global::IspanHomework.Properties.Resources.新增NToolStripButton_Image;
             this.新增NToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.新增NToolStripButton.Name = "新增NToolStripButton";
             this.新增NToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.新增NToolStripButton.Text = "新增(&N)";
+            this.新增NToolStripButton.Click += new System.EventHandler(this.新增NToolStripButton_Click);
             // 
             // 開啟OToolStripButton
             // 
             this.開啟OToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.開啟OToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("開啟OToolStripButton.Image")));
+            this.開啟OToolStripButton.Image = global::IspanHomework.Properties.Resources.開啟OToolStripButton_Image;
             this.開啟OToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.開啟OToolStripButton.Name = "開啟OToolStripButton";
             this.開啟OToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.開啟OToolStripButton.Text = "開啟(&O)";
+            this.開啟OToolStripButton.Click += new System.EventHandler(this.開啟OToolStripButton_Click);
             // 
             // 儲存SToolStripButton
             // 
             this.儲存SToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.儲存SToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("儲存SToolStripButton.Image")));
+            this.儲存SToolStripButton.Image = global::IspanHomework.Properties.Resources.儲存SToolStripButton_Image;
             this.儲存SToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.儲存SToolStripButton.Name = "儲存SToolStripButton";
             this.儲存SToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.儲存SToolStripButton.Text = "儲存(&S)";
+            this.儲存SToolStripButton.Click += new System.EventHandler(this.儲存SToolStripButton_Click);
             // 
             // 列印PToolStripButton
             // 
             this.列印PToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.列印PToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("列印PToolStripButton.Image")));
+            this.列印PToolStripButton.Image = global::IspanHomework.Properties.Resources.列印PToolStripButton_Image;
             this.列印PToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.列印PToolStripButton.Name = "列印PToolStripButton";
             this.列印PToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -488,29 +490,32 @@
             // 剪下UToolStripButton
             // 
             this.剪下UToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.剪下UToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("剪下UToolStripButton.Image")));
+            this.剪下UToolStripButton.Image = global::IspanHomework.Properties.Resources.剪下UToolStripButton_Image;
             this.剪下UToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.剪下UToolStripButton.Name = "剪下UToolStripButton";
             this.剪下UToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.剪下UToolStripButton.Text = "剪下(&U)";
+            this.剪下UToolStripButton.Click += new System.EventHandler(this.剪下UToolStripButton_Click);
             // 
             // 複製CToolStripButton
             // 
             this.複製CToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.複製CToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("複製CToolStripButton.Image")));
+            this.複製CToolStripButton.Image = global::IspanHomework.Properties.Resources.複製CToolStripButton_Image;
             this.複製CToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.複製CToolStripButton.Name = "複製CToolStripButton";
             this.複製CToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.複製CToolStripButton.Text = "複製(&C)";
+            this.複製CToolStripButton.Click += new System.EventHandler(this.複製CToolStripButton_Click);
             // 
             // 貼上PToolStripButton
             // 
             this.貼上PToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.貼上PToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("貼上PToolStripButton.Image")));
+            this.貼上PToolStripButton.Image = global::IspanHomework.Properties.Resources.貼上PToolStripButton_Image;
             this.貼上PToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.貼上PToolStripButton.Name = "貼上PToolStripButton";
             this.貼上PToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.貼上PToolStripButton.Text = "貼上(&P)";
+            this.貼上PToolStripButton.Click += new System.EventHandler(this.貼上PToolStripButton_Click);
             // 
             // toolStripSeparator7
             // 
@@ -519,12 +524,14 @@
             // 
             // 說明LToolStripButton
             // 
+            this.說明LToolStripButton.BackColor = System.Drawing.SystemColors.Control;
             this.說明LToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.說明LToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("說明LToolStripButton.Image")));
+            this.說明LToolStripButton.Image = global::IspanHomework.Properties.Resources.說明LToolStripButton_Image;
             this.說明LToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.說明LToolStripButton.Name = "說明LToolStripButton";
             this.說明LToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.說明LToolStripButton.Text = "說明(&L)";
+            this.說明LToolStripButton.Click += new System.EventHandler(this.說明LToolStripButton_Click);
             // 
             // textBox1
             // 

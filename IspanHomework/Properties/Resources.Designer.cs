@@ -263,9 +263,179 @@ namespace IspanHomework.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap 儲存SToolStripButton_Image {
+            get {
+                object obj = ResourceManager.GetObject("儲存SToolStripButton_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 儲存SToolStripMenuItem_Image {
+            get {
+                object obj = ResourceManager.GetObject("儲存SToolStripMenuItem_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 列印PToolStripButton_Image {
+            get {
+                object obj = ResourceManager.GetObject("列印PToolStripButton_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 列印PToolStripMenuItem_Image {
+            get {
+                object obj = ResourceManager.GetObject("列印PToolStripMenuItem_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 剪下TToolStripMenuItem_Image {
+            get {
+                object obj = ResourceManager.GetObject("剪下TToolStripMenuItem_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 剪下UToolStripButton_Image {
+            get {
+                object obj = ResourceManager.GetObject("剪下UToolStripButton_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 擷取 {
+            get {
+                object obj = ResourceManager.GetObject("擷取", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 新增NToolStripButton_Image {
+            get {
+                object obj = ResourceManager.GetObject("新增NToolStripButton_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 新增NToolStripMenuItem_Image {
+            get {
+                object obj = ResourceManager.GetObject("新增NToolStripMenuItem_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap 確認過眼神 {
             get {
                 object obj = ResourceManager.GetObject("確認過眼神", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 複製CToolStripButton_Image {
+            get {
+                object obj = ResourceManager.GetObject("複製CToolStripButton_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 複製CToolStripMenuItem_Image {
+            get {
+                object obj = ResourceManager.GetObject("複製CToolStripMenuItem_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 說明LToolStripButton_Image {
+            get {
+                object obj = ResourceManager.GetObject("說明LToolStripButton_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 貼上PToolStripButton_Image {
+            get {
+                object obj = ResourceManager.GetObject("貼上PToolStripButton_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 貼上PToolStripMenuItem_Image {
+            get {
+                object obj = ResourceManager.GetObject("貼上PToolStripMenuItem_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 開啟OToolStripButton_Image {
+            get {
+                object obj = ResourceManager.GetObject("開啟OToolStripButton_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 開啟OToolStripMenuItem_Image {
+            get {
+                object obj = ResourceManager.GetObject("開啟OToolStripMenuItem_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 預覽列印VToolStripMenuItem_Image {
+            get {
+                object obj = ResourceManager.GetObject("預覽列印VToolStripMenuItem_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

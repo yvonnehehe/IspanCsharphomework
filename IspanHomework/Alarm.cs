@@ -59,7 +59,7 @@ namespace IspanHomework
                 MessageBox.Show("Times up!!!!");
                 checkBox1.Checked = false;
             }
-            
+
         }
     }
 }

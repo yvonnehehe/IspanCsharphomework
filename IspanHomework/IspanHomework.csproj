@@ -297,5 +297,56 @@
   <ItemGroup>
     <None Include="Resources\P15.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\列印PToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\列印PToolStripMenuItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剪下TToolStripMenuItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\剪下UToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\貼上PToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\貼上PToolStripMenuItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\開啟OToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\開啟OToolStripMenuItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新增NToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新增NToolStripMenuItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\預覽列印VToolStripMenuItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\說明LToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\複製CToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\複製CToolStripMenuItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\儲存SToolStripButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\儲存SToolStripMenuItem.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\擷取.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
