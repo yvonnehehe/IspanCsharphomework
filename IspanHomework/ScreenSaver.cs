@@ -14,16 +14,11 @@ namespace IspanHomework
     public partial class ScreenSaver : Form
     {
         bool enableMouseMove = false;
-        Timer timer;
         public ScreenSaver()
         {
             InitializeComponent();
             Controls.Add(pictureBox1);
-            timer = new Timer();
-            timer.Interval = 100;
-            timer.Tick += Timer_Tick;
-            timer.Start();
-
+            timer1.Start();
         }
         int runX = 5, runY = 5; //控制移動距離
         //private Point Location;
@@ -32,12 +27,11 @@ namespace IspanHomework
             if (enableMouseMove)
             {
                 int D = Math.Abs(Cursor.Position.X - Location.X) + Math.Abs(Cursor.Position.Y - Location.Y);
-                if (D > 700)
+                if (D > 1000)
                 {
                     this.Close();
                 }
             }
-
         }
         private void MoveImage()
         {
@@ -54,14 +48,13 @@ namespace IspanHomework
         }
         private void ScreenSaver_Load(object sender, EventArgs e)
         {
-            int MouseSiteX = MousePosition.X;
-            int MouseSiteY = MousePosition.Y;
-            //Location = MousePosition;
+            //int MouseSiteX = MousePosition.X;
+            //int MouseSiteY = MousePosition.Y;
+            Location = MousePosition;
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            //timer.Stop();
             enableMouseMove = true;
             MoveImage();
         }
