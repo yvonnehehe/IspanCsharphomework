@@ -48,25 +48,27 @@
             // labName
             // 
             this.labName.AutoSize = true;
-            this.labName.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labName.Location = new System.Drawing.Point(65, 62);
+            this.labName.BackColor = System.Drawing.Color.Transparent;
+            this.labName.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labName.ForeColor = System.Drawing.Color.Black;
+            this.labName.Location = new System.Drawing.Point(30, 24);
             this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(43, 16);
+            this.labName.Size = new System.Drawing.Size(42, 19);
             this.labName.TabIndex = 0;
             this.labName.Text = "姓名:";
             // 
             // txtName
             // 
-            this.txtName.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtName.Location = new System.Drawing.Point(114, 59);
+            this.txtName.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtName.Location = new System.Drawing.Point(79, 21);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 27);
             this.txtName.TabIndex = 1;
             // 
             // txtChineseScore
             // 
-            this.txtChineseScore.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtChineseScore.Location = new System.Drawing.Point(114, 92);
+            this.txtChineseScore.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtChineseScore.Location = new System.Drawing.Point(79, 54);
             this.txtChineseScore.Name = "txtChineseScore";
             this.txtChineseScore.Size = new System.Drawing.Size(100, 27);
             this.txtChineseScore.TabIndex = 3;
@@ -74,17 +76,19 @@
             // labChinese
             // 
             this.labChinese.AutoSize = true;
-            this.labChinese.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labChinese.Location = new System.Drawing.Point(65, 95);
+            this.labChinese.BackColor = System.Drawing.Color.Transparent;
+            this.labChinese.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labChinese.ForeColor = System.Drawing.Color.Black;
+            this.labChinese.Location = new System.Drawing.Point(30, 57);
             this.labChinese.Name = "labChinese";
-            this.labChinese.Size = new System.Drawing.Size(43, 16);
+            this.labChinese.Size = new System.Drawing.Size(42, 19);
             this.labChinese.TabIndex = 2;
             this.labChinese.Text = "國文:";
             // 
             // txtEnglishScore
             // 
-            this.txtEnglishScore.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtEnglishScore.Location = new System.Drawing.Point(114, 125);
+            this.txtEnglishScore.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtEnglishScore.Location = new System.Drawing.Point(79, 87);
             this.txtEnglishScore.Name = "txtEnglishScore";
             this.txtEnglishScore.Size = new System.Drawing.Size(100, 27);
             this.txtEnglishScore.TabIndex = 5;
@@ -92,17 +96,19 @@
             // labEnglish
             // 
             this.labEnglish.AutoSize = true;
-            this.labEnglish.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labEnglish.Location = new System.Drawing.Point(65, 128);
+            this.labEnglish.BackColor = System.Drawing.Color.Transparent;
+            this.labEnglish.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labEnglish.ForeColor = System.Drawing.Color.Black;
+            this.labEnglish.Location = new System.Drawing.Point(30, 90);
             this.labEnglish.Name = "labEnglish";
-            this.labEnglish.Size = new System.Drawing.Size(43, 16);
+            this.labEnglish.Size = new System.Drawing.Size(42, 19);
             this.labEnglish.TabIndex = 4;
             this.labEnglish.Text = "英文:";
             // 
             // txtMathScore
             // 
-            this.txtMathScore.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtMathScore.Location = new System.Drawing.Point(114, 158);
+            this.txtMathScore.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtMathScore.Location = new System.Drawing.Point(79, 120);
             this.txtMathScore.Name = "txtMathScore";
             this.txtMathScore.Size = new System.Drawing.Size(100, 27);
             this.txtMathScore.TabIndex = 7;
@@ -110,17 +116,19 @@
             // labMath
             // 
             this.labMath.AutoSize = true;
-            this.labMath.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labMath.Location = new System.Drawing.Point(65, 161);
+            this.labMath.BackColor = System.Drawing.Color.Transparent;
+            this.labMath.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labMath.ForeColor = System.Drawing.Color.Black;
+            this.labMath.Location = new System.Drawing.Point(30, 123);
             this.labMath.Name = "labMath";
-            this.labMath.Size = new System.Drawing.Size(43, 16);
+            this.labMath.Size = new System.Drawing.Size(42, 19);
             this.labMath.TabIndex = 6;
             this.labMath.Text = "數學:";
             // 
             // btnStore
             // 
-            this.btnStore.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnStore.Location = new System.Drawing.Point(114, 208);
+            this.btnStore.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStore.Location = new System.Drawing.Point(194, 37);
             this.btnStore.Name = "btnStore";
             this.btnStore.Size = new System.Drawing.Size(79, 31);
             this.btnStore.TabIndex = 8;
@@ -130,10 +138,10 @@
             // 
             // btnShowStore
             // 
-            this.btnShowStore.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnShowStore.Location = new System.Drawing.Point(90, 253);
+            this.btnShowStore.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnShowStore.Location = new System.Drawing.Point(185, 90);
             this.btnShowStore.Name = "btnShowStore";
-            this.btnShowStore.Size = new System.Drawing.Size(124, 31);
+            this.btnShowStore.Size = new System.Drawing.Size(114, 31);
             this.btnShowStore.TabIndex = 9;
             this.btnShowStore.Text = "顯示儲存內容";
             this.btnShowStore.UseVisualStyleBackColor = true;
@@ -141,9 +149,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.txtShowSuject);
             this.groupBox1.Controls.Add(this.txtShowScore);
-            this.groupBox1.Location = new System.Drawing.Point(269, 37);
+            this.groupBox1.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.groupBox1.Location = new System.Drawing.Point(32, 153);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(252, 257);
             this.groupBox1.TabIndex = 10;
@@ -170,8 +180,8 @@
             // 
             // btnMaxMinSuject
             // 
-            this.btnMaxMinSuject.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnMaxMinSuject.Location = new System.Drawing.Point(370, 300);
+            this.btnMaxMinSuject.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnMaxMinSuject.Location = new System.Drawing.Point(133, 416);
             this.btnMaxMinSuject.Name = "btnMaxMinSuject";
             this.btnMaxMinSuject.Size = new System.Drawing.Size(151, 28);
             this.btnMaxMinSuject.TabIndex = 11;
@@ -183,7 +193,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 372);
+            this.BackgroundImage = global::IspanHomework.Properties.Resources.pexels_nati_17137766;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(301, 451);
             this.Controls.Add(this.btnMaxMinSuject);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnShowStore);

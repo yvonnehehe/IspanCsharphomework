@@ -348,5 +348,26 @@
   <ItemGroup>
     <None Include="Resources\擷取.JPG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-aleksandar-pasaric-1323712.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\79.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\170.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\143.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-miguel-á-padriñán-19670.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nati-17137766.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

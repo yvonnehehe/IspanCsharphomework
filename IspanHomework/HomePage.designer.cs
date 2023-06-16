@@ -44,11 +44,15 @@
             this.btnPOS = new System.Windows.Forms.Button();
             this.btnLoan = new System.Windows.Forms.Button();
             this.btnHello = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +68,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(94)))), ((int)(((byte)(109)))));
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
             // 
             // splitContainer1.Panel2
             // 
@@ -105,6 +110,7 @@
             // 
             this.splitContainer2.Panel2.BackgroundImage = global::IspanHomework.Properties.Resources.moon;
             this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.splitContainer2.Panel2.Controls.Add(this.label2);
             this.splitContainer2.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer2.Size = new System.Drawing.Size(954, 527);
@@ -120,7 +126,7 @@
             this.btnAlarm.Location = new System.Drawing.Point(14, 603);
             this.btnAlarm.Margin = new System.Windows.Forms.Padding(0);
             this.btnAlarm.Name = "btnAlarm";
-            this.btnAlarm.Size = new System.Drawing.Size(128, 38);
+            this.btnAlarm.Size = new System.Drawing.Size(161, 38);
             this.btnAlarm.TabIndex = 27;
             this.btnAlarm.Text = "Alarm";
             this.btnAlarm.UseVisualStyleBackColor = true;
@@ -134,7 +140,7 @@
             this.btnPictureViewer.Location = new System.Drawing.Point(14, 509);
             this.btnPictureViewer.Margin = new System.Windows.Forms.Padding(0);
             this.btnPictureViewer.Name = "btnPictureViewer";
-            this.btnPictureViewer.Size = new System.Drawing.Size(128, 38);
+            this.btnPictureViewer.Size = new System.Drawing.Size(161, 38);
             this.btnPictureViewer.TabIndex = 26;
             this.btnPictureViewer.Text = "Picture Viewer";
             this.btnPictureViewer.UseVisualStyleBackColor = true;
@@ -148,7 +154,7 @@
             this.btnPainter.Location = new System.Drawing.Point(14, 463);
             this.btnPainter.Margin = new System.Windows.Forms.Padding(0);
             this.btnPainter.Name = "btnPainter";
-            this.btnPainter.Size = new System.Drawing.Size(128, 38);
+            this.btnPainter.Size = new System.Drawing.Size(161, 38);
             this.btnPainter.TabIndex = 25;
             this.btnPainter.Text = "小畫家";
             this.btnPainter.UseVisualStyleBackColor = true;
@@ -162,7 +168,7 @@
             this.btnNotepad.Location = new System.Drawing.Point(14, 418);
             this.btnNotepad.Margin = new System.Windows.Forms.Padding(0);
             this.btnNotepad.Name = "btnNotepad";
-            this.btnNotepad.Size = new System.Drawing.Size(128, 38);
+            this.btnNotepad.Size = new System.Drawing.Size(161, 38);
             this.btnNotepad.TabIndex = 24;
             this.btnNotepad.Text = "NotePad";
             this.btnNotepad.UseVisualStyleBackColor = true;
@@ -176,7 +182,7 @@
             this.btnScreenSaver.Location = new System.Drawing.Point(14, 373);
             this.btnScreenSaver.Margin = new System.Windows.Forms.Padding(0);
             this.btnScreenSaver.Name = "btnScreenSaver";
-            this.btnScreenSaver.Size = new System.Drawing.Size(128, 38);
+            this.btnScreenSaver.Size = new System.Drawing.Size(161, 38);
             this.btnScreenSaver.TabIndex = 23;
             this.btnScreenSaver.Text = "Screen Saver";
             this.btnScreenSaver.UseVisualStyleBackColor = true;
@@ -190,7 +196,7 @@
             this.btnXOGame.Location = new System.Drawing.Point(14, 328);
             this.btnXOGame.Margin = new System.Windows.Forms.Padding(0);
             this.btnXOGame.Name = "btnXOGame";
-            this.btnXOGame.Size = new System.Drawing.Size(128, 38);
+            this.btnXOGame.Size = new System.Drawing.Size(161, 38);
             this.btnXOGame.TabIndex = 22;
             this.btnXOGame.Text = "XOGame";
             this.btnXOGame.UseVisualStyleBackColor = true;
@@ -204,7 +210,7 @@
             this.btnForDoWhile.Location = new System.Drawing.Point(14, 283);
             this.btnForDoWhile.Margin = new System.Windows.Forms.Padding(0);
             this.btnForDoWhile.Name = "btnForDoWhile";
-            this.btnForDoWhile.Size = new System.Drawing.Size(128, 38);
+            this.btnForDoWhile.Size = new System.Drawing.Size(161, 38);
             this.btnForDoWhile.TabIndex = 21;
             this.btnForDoWhile.Text = "ForDo While";
             this.btnForDoWhile.UseVisualStyleBackColor = true;
@@ -218,7 +224,7 @@
             this.btnMyClac.Location = new System.Drawing.Point(14, 238);
             this.btnMyClac.Margin = new System.Windows.Forms.Padding(0);
             this.btnMyClac.Name = "btnMyClac";
-            this.btnMyClac.Size = new System.Drawing.Size(128, 38);
+            this.btnMyClac.Size = new System.Drawing.Size(161, 38);
             this.btnMyClac.TabIndex = 20;
             this.btnMyClac.Text = "MyClac";
             this.btnMyClac.UseVisualStyleBackColor = true;
@@ -232,7 +238,7 @@
             this.btnGuess.Location = new System.Drawing.Point(14, 556);
             this.btnGuess.Margin = new System.Windows.Forms.Padding(0);
             this.btnGuess.Name = "btnGuess";
-            this.btnGuess.Size = new System.Drawing.Size(128, 38);
+            this.btnGuess.Size = new System.Drawing.Size(161, 38);
             this.btnGuess.TabIndex = 19;
             this.btnGuess.Text = "Guess";
             this.btnGuess.UseVisualStyleBackColor = true;
@@ -246,7 +252,7 @@
             this.btnStudentsGrade.Location = new System.Drawing.Point(14, 193);
             this.btnStudentsGrade.Margin = new System.Windows.Forms.Padding(0);
             this.btnStudentsGrade.Name = "btnStudentsGrade";
-            this.btnStudentsGrade.Size = new System.Drawing.Size(128, 38);
+            this.btnStudentsGrade.Size = new System.Drawing.Size(161, 38);
             this.btnStudentsGrade.TabIndex = 18;
             this.btnStudentsGrade.Text = "StudentsGrade";
             this.btnStudentsGrade.UseVisualStyleBackColor = true;
@@ -260,7 +266,7 @@
             this.btnStudentStructForm.Location = new System.Drawing.Point(14, 148);
             this.btnStudentStructForm.Margin = new System.Windows.Forms.Padding(0);
             this.btnStudentStructForm.Name = "btnStudentStructForm";
-            this.btnStudentStructForm.Size = new System.Drawing.Size(128, 38);
+            this.btnStudentStructForm.Size = new System.Drawing.Size(161, 38);
             this.btnStudentStructForm.TabIndex = 17;
             this.btnStudentStructForm.Text = "Student_StructForm";
             this.btnStudentStructForm.UseVisualStyleBackColor = true;
@@ -274,7 +280,7 @@
             this.btnPOS.Location = new System.Drawing.Point(14, 103);
             this.btnPOS.Margin = new System.Windows.Forms.Padding(0);
             this.btnPOS.Name = "btnPOS";
-            this.btnPOS.Size = new System.Drawing.Size(128, 38);
+            this.btnPOS.Size = new System.Drawing.Size(161, 38);
             this.btnPOS.TabIndex = 16;
             this.btnPOS.Text = "POS";
             this.btnPOS.UseVisualStyleBackColor = true;
@@ -288,7 +294,7 @@
             this.btnLoan.Location = new System.Drawing.Point(14, 58);
             this.btnLoan.Margin = new System.Windows.Forms.Padding(0);
             this.btnLoan.Name = "btnLoan";
-            this.btnLoan.Size = new System.Drawing.Size(128, 38);
+            this.btnLoan.Size = new System.Drawing.Size(161, 38);
             this.btnLoan.TabIndex = 15;
             this.btnLoan.Text = "Loan";
             this.btnLoan.UseVisualStyleBackColor = true;
@@ -302,11 +308,34 @@
             this.btnHello.Location = new System.Drawing.Point(14, 12);
             this.btnHello.Margin = new System.Windows.Forms.Padding(0);
             this.btnHello.Name = "btnHello";
-            this.btnHello.Size = new System.Drawing.Size(128, 38);
+            this.btnHello.Size = new System.Drawing.Size(161, 38);
             this.btnHello.TabIndex = 14;
             this.btnHello.Text = "Hello";
             this.btnHello.UseVisualStyleBackColor = true;
             this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Papyrus", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(72, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "C# work";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(587, 474);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 21);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "yvonne";
             // 
             // HomePage
             // 
@@ -317,11 +346,14 @@
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Homepage";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            this.splitContainer2.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -346,5 +378,7 @@
         private System.Windows.Forms.Button btnLoan;
         private System.Windows.Forms.Button btnHello;
         private System.Windows.Forms.Button btnAlarm;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

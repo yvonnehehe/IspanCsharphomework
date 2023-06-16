@@ -39,11 +39,11 @@ namespace IspanHomework
             timer1.Start();
             for (int i = 0; i < 24; i++)
             {
-                cobHour.Items.Add(i);
+                cobHour.Items.Add(i.ToString("00"));
             }
             for (int j = 0; j < 60; j++)
             {
-                cobMinute.Items.Add(j);
+                cobMinute.Items.Add(j.ToString("00"));
             }
         }
 

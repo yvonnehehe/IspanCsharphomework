@@ -45,41 +45,46 @@ namespace IspanHomework
             // labMonth
             // 
             this.labMonth.AutoSize = true;
+            this.labMonth.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labMonth.Location = new System.Drawing.Point(52, 118);
             this.labMonth.Name = "labMonth";
-            this.labMonth.Size = new System.Drawing.Size(53, 12);
+            this.labMonth.Size = new System.Drawing.Size(55, 16);
             this.labMonth.TabIndex = 17;
             this.labMonth.Text = "月付款：";
             // 
             // labRate
             // 
             this.labRate.AutoSize = true;
+            this.labRate.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labRate.Location = new System.Drawing.Point(52, 86);
             this.labRate.Name = "labRate";
-            this.labRate.Size = new System.Drawing.Size(58, 12);
+            this.labRate.Size = new System.Drawing.Size(62, 16);
             this.labRate.TabIndex = 16;
             this.labRate.Text = "利率(%)：";
             // 
             // labYear
             // 
             this.labYear.AutoSize = true;
+            this.labYear.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labYear.Location = new System.Drawing.Point(52, 55);
             this.labYear.Name = "labYear";
-            this.labYear.Size = new System.Drawing.Size(61, 12);
+            this.labYear.Size = new System.Drawing.Size(63, 16);
             this.labYear.TabIndex = 15;
             this.labYear.Text = "期限(年)：";
             // 
             // labAmount
             // 
             this.labAmount.AutoSize = true;
+            this.labAmount.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labAmount.Location = new System.Drawing.Point(52, 23);
             this.labAmount.Name = "labAmount";
-            this.labAmount.Size = new System.Drawing.Size(65, 12);
+            this.labAmount.Size = new System.Drawing.Size(67, 16);
             this.labAmount.TabIndex = 14;
             this.labAmount.Text = "貸款金額：";
             // 
             // btnEmail
             // 
+            this.btnEmail.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnEmail.Location = new System.Drawing.Point(187, 182);
             this.btnEmail.Name = "btnEmail";
             this.btnEmail.Size = new System.Drawing.Size(75, 23);
@@ -90,9 +95,10 @@ namespace IspanHomework
             // labTotal
             // 
             this.labTotal.AutoSize = true;
+            this.labTotal.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labTotal.Location = new System.Drawing.Point(52, 150);
             this.labTotal.Name = "labTotal";
-            this.labTotal.Size = new System.Drawing.Size(53, 12);
+            this.labTotal.Size = new System.Drawing.Size(55, 16);
             this.labTotal.TabIndex = 18;
             this.labTotal.Text = "總付款：";
             // 
@@ -100,10 +106,11 @@ namespace IspanHomework
             // 
             this.labAmountReport.AutoSize = true;
             this.labAmountReport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labAmountReport.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labAmountReport.Location = new System.Drawing.Point(117, 22);
             this.labAmountReport.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labAmountReport.Name = "labAmountReport";
-            this.labAmountReport.Size = new System.Drawing.Size(13, 14);
+            this.labAmountReport.Size = new System.Drawing.Size(16, 18);
             this.labAmountReport.TabIndex = 19;
             this.labAmountReport.Text = "0";
             // 
@@ -111,10 +118,11 @@ namespace IspanHomework
             // 
             this.labYearReport.AutoSize = true;
             this.labYearReport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labYearReport.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labYearReport.Location = new System.Drawing.Point(117, 55);
             this.labYearReport.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labYearReport.Name = "labYearReport";
-            this.labYearReport.Size = new System.Drawing.Size(13, 14);
+            this.labYearReport.Size = new System.Drawing.Size(16, 18);
             this.labYearReport.TabIndex = 20;
             this.labYearReport.Text = "0";
             // 
@@ -122,10 +130,11 @@ namespace IspanHomework
             // 
             this.labRateReport.AutoSize = true;
             this.labRateReport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labRateReport.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labRateReport.Location = new System.Drawing.Point(117, 86);
             this.labRateReport.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labRateReport.Name = "labRateReport";
-            this.labRateReport.Size = new System.Drawing.Size(13, 14);
+            this.labRateReport.Size = new System.Drawing.Size(16, 18);
             this.labRateReport.TabIndex = 21;
             this.labRateReport.Text = "0";
             // 
@@ -133,10 +142,11 @@ namespace IspanHomework
             // 
             this.labmonthReport.AutoSize = true;
             this.labmonthReport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labmonthReport.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labmonthReport.Location = new System.Drawing.Point(117, 118);
             this.labmonthReport.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labmonthReport.Name = "labmonthReport";
-            this.labmonthReport.Size = new System.Drawing.Size(13, 14);
+            this.labmonthReport.Size = new System.Drawing.Size(16, 18);
             this.labmonthReport.TabIndex = 22;
             this.labmonthReport.Text = "0";
             // 
@@ -144,10 +154,11 @@ namespace IspanHomework
             // 
             this.labTotalReport.AutoSize = true;
             this.labTotalReport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labTotalReport.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labTotalReport.Location = new System.Drawing.Point(117, 150);
             this.labTotalReport.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.labTotalReport.Name = "labTotalReport";
-            this.labTotalReport.Size = new System.Drawing.Size(13, 14);
+            this.labTotalReport.Size = new System.Drawing.Size(16, 18);
             this.labTotalReport.TabIndex = 23;
             this.labTotalReport.Text = "0";
             // 
@@ -155,7 +166,7 @@ namespace IspanHomework
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 241);
+            this.ClientSize = new System.Drawing.Size(295, 214);
             this.Controls.Add(this.labTotalReport);
             this.Controls.Add(this.labmonthReport);
             this.Controls.Add(this.labRateReport);
