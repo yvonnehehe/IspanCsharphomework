@@ -16,7 +16,7 @@ namespace IspanHomework
         {
             InitializeComponent();
             Controls.Add(pictureBox1);
-            //timer1.Start();
+            timer1.Start();
         }
         int runX = 5, runY = 5; //控制移動距離
         private Point Location;
@@ -41,11 +41,10 @@ namespace IspanHomework
                 runY = -runY;
             }
         }
-        int MouseSiteX, MouseSiteY;
         private void ScreenSaver_Load(object sender, EventArgs e)
         {
-            MouseSiteX = MousePosition.X;
-            MouseSiteY = MousePosition.Y;
+            int MouseSiteX = MousePosition.X;
+            int MouseSiteY = MousePosition.Y;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
