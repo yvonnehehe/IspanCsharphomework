@@ -84,20 +84,20 @@
             // 
             // cobMinute
             // 
-            this.cobMinute.Font = new System.Drawing.Font("新細明體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cobMinute.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cobMinute.FormattingEnabled = true;
             this.cobMinute.Location = new System.Drawing.Point(225, 98);
             this.cobMinute.Name = "cobMinute";
-            this.cobMinute.Size = new System.Drawing.Size(40, 21);
+            this.cobMinute.Size = new System.Drawing.Size(40, 25);
             this.cobMinute.TabIndex = 5;
             // 
             // cobHour
             // 
-            this.cobHour.Font = new System.Drawing.Font("新細明體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cobHour.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cobHour.FormattingEnabled = true;
             this.cobHour.Location = new System.Drawing.Point(161, 98);
             this.cobHour.Name = "cobHour";
-            this.cobHour.Size = new System.Drawing.Size(40, 21);
+            this.cobHour.Size = new System.Drawing.Size(40, 25);
             this.cobHour.TabIndex = 4;
             // 
             // checkBox1
@@ -130,21 +130,24 @@
             // 
             this.labHour.AutoSize = true;
             this.labHour.BackColor = System.Drawing.Color.Transparent;
-            this.labHour.Font = new System.Drawing.Font("Corbel", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labHour.Location = new System.Drawing.Point(166, 32);
+            this.labHour.Font = new System.Drawing.Font("Corbel", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labHour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labHour.Location = new System.Drawing.Point(126, 26);
             this.labHour.Name = "labHour";
-            this.labHour.Size = new System.Drawing.Size(49, 39);
+            this.labHour.Size = new System.Drawing.Size(75, 59);
             this.labHour.TabIndex = 2;
             this.labHour.Text = "00";
+            this.labHour.Click += new System.EventHandler(this.labHour_Click);
             // 
             // labMinute
             // 
             this.labMinute.AutoSize = true;
             this.labMinute.BackColor = System.Drawing.Color.Transparent;
-            this.labMinute.Font = new System.Drawing.Font("Corbel", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labMinute.Location = new System.Drawing.Point(234, 32);
+            this.labMinute.Font = new System.Drawing.Font("Corbel", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labMinute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labMinute.Location = new System.Drawing.Point(222, 26);
             this.labMinute.Name = "labMinute";
-            this.labMinute.Size = new System.Drawing.Size(49, 39);
+            this.labMinute.Size = new System.Drawing.Size(75, 59);
             this.labMinute.TabIndex = 3;
             this.labMinute.Text = "00";
             // 
@@ -152,10 +155,11 @@
             // 
             this.labSecond.AutoSize = true;
             this.labSecond.BackColor = System.Drawing.Color.Transparent;
-            this.labSecond.Font = new System.Drawing.Font("Corbel", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labSecond.Location = new System.Drawing.Point(302, 32);
+            this.labSecond.Font = new System.Drawing.Font("Corbel", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labSecond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labSecond.Location = new System.Drawing.Point(323, 26);
             this.labSecond.Name = "labSecond";
-            this.labSecond.Size = new System.Drawing.Size(49, 39);
+            this.labSecond.Size = new System.Drawing.Size(75, 59);
             this.labSecond.TabIndex = 4;
             this.labSecond.Text = "00";
             // 
@@ -163,10 +167,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Corbel", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(208, 32);
+            this.label5.Font = new System.Drawing.Font("Corbel", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(193, 26);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 39);
+            this.label5.Size = new System.Drawing.Size(39, 59);
             this.label5.TabIndex = 5;
             this.label5.Text = ":";
             // 
@@ -174,10 +179,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Corbel", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(276, 32);
+            this.label6.Font = new System.Drawing.Font("Corbel", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label6.Location = new System.Drawing.Point(295, 26);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 39);
+            this.label6.Size = new System.Drawing.Size(39, 59);
             this.label6.TabIndex = 6;
             this.label6.Text = ":";
             // 

@@ -34,6 +34,12 @@ namespace IspanHomework
         int hour, minute, second;
         string ff;
         string alarmhour, alarmminute;
+
+        private void labHour_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Alarm_Load(object sender, EventArgs e)
         {
             timer1.Start();
